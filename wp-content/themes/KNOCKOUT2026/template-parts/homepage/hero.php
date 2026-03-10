@@ -4,7 +4,7 @@
  */
 ?>
 
-<div class="hero-section" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/hero-bg.jpg');">
+<!-- <div class="hero-section" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/hero-bg.jpg');">
     <div class="container">
         <div class="hero-content">
             <h1><?php _e('WATCH LIVE SPORTS', 'sports-cafe'); ?></h1>
@@ -49,4 +49,4 @@
             wp_reset_postdata(); ?>
         </div>
     </div>
-</div>
+</div> -->

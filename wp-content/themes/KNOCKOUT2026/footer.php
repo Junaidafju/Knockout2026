@@ -1,82 +1,106 @@
 </div><!-- #content -->
-    
-    <footer id="colophon" class="site-footer">
-        <div class="container">
-            <div class="footer-grid">
-                
-                <!-- Logo & About -->
-                <div class="footer-about">
-                    <div class="footer-logo">
-                        <?php if (has_custom_logo()) : ?>
-                            <?php the_custom_logo(); ?>
-                        <?php else : ?>
-                            <a href="<?php echo esc_url(home_url('/')); ?>" class="logo-text">
-                                <span class="logo-knock">KNOCK</span><span class="logo-out">OUT</span>
-                            </a>
-                        <?php endif; ?>
-                    </div>
-                    
-                    <p>Knockout is the first sports café in Kolkata bringing energy, food, and sports together. With a modern design, 6-lane bowling alley, and a variety of games and activities, Knockout is the perfect place to relax and enjoy yourself.</p>
+    <!-- Footer -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            
+            <!-- About Section -->
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <a href="<?php echo esc_url(home_url('/')); ?>" class="neon-logo">
+                        <span class="logo-knock">KnOCKOut</span>
+                    </a>
                 </div>
-                
-                <!-- Products/Quick Links -->
-                <div class="footer-links">
-                    <h3>Products</h3>
-                    <ul>
-                        <li><a href="/menu">Menu</a></li>
-                        <li><a href="/events">Events</a></li>
-                        <li><a href="/membership">Membership</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Services -->
-                <div class="footer-links">
-                    <h3>Services</h3>
-                    <ul>
-                        <li><a href="/reservation">Table Booking</a></li>
-                        <li><a href="/live-sports">Live Sports</a></li>
-                        <li><a href="/private-events">Private Events</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Company -->
-                <div class="footer-links">
-                    <h3>Company</h3>
-                    <ul>
-                        <li><a href="/about">About Us</a></li>
-                        <li><a href="/careers">Careers</a></li>
-                        <li><a href="/contact">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Legal & Privacy -->
-                <div class="footer-links">
-                    <h3>Legal & Privacy</h3>
-                    <ul>
-                        <li><a href="/terms">Terms & Conditions</a></li>
-                        <li><a href="/privacy">Privacy Policy</a></li>
-                    </ul>
+                <p>Kolkata's premier <span class="gradient-text">sports entertainment</span> destination where luxury meets the game. Experience dining, bowling, and nightlife like never before.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">FB</a>
+                    <a href="#" class="social-link">IG</a>
+                    <a href="#" class="social-link">TW</a>
+                    <a href="#" class="social-link">YT</a>
                 </div>
             </div>
             
-            <!-- Social Links & Copyright -->
-            <div class="footer-bottom">
-                <div class="social-links">
-                    <a href="#" target="_blank" class="social-link">FB</a>
-                    <a href="#" target="_blank" class="social-link">IG</a>
-                    <a href="#" target="_blank" class="social-link">TW</a>
-                    <a href="#" target="_blank" class="social-link">YT</a>
-                </div>
-                
-                <div class="copyright">
-                    &copy; <?php echo date('Y'); ?> Knockout Sports Café. All rights reserved.
+            <!-- Quick Links -->
+            <div class="footer-links">
+                <h3><span class="gradient-text">EXPLORE</span></h3>
+                <ul>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/menu">Menu</a></li>
+                    <li><a href="/events">Events</a></li>
+                    <li><a href="/gallery">Gallery</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <!-- Experiences -->
+            <div class="footer-links">
+                <h3><span class="gradient-text">EXPERIENCES</span></h3>
+                <ul>
+                    <li><a href="/bowling">Bowling</a></li>
+                    <li><a href="/arcade">VR Arcade</a></li>
+                    <li><a href="/sports">Live Sports</a></li>
+                    <li><a href="/hookah">Hookah Lounge</a></li>
+                    <li><a href="/private-events">Private Events</a></li>
+                </ul>
+            </div>
+            
+            <!-- Contact -->
+            <div class="footer-links">
+                <h3><span class="gradient-text">VISIT US</span></h3>
+                <ul>
+                    <li>📍 123 Park Street</li>
+                    <li>Kolkata - 700016</li>
+                    <li>📞 +91 98765 43210</li>
+                    <li>✉️ hello@knockout.in</li>
+                </ul>
+                <div class="hours">
+                    <span class="gradient-text">OPEN DAILY</span>
+                    <p>Mon-Thu: 11am - 1am<br>Fri-Sun: 11am - 3am</p>
                 </div>
             </div>
         </div>
-    </footer>
+        
+        <div class="footer-bottom">
+            <div class="copyright">
+                © <?php echo date('Y'); ?> <span class="gradient-text">KNOCKOUT</span>. All rights reserved.
+            </div>
+            <div class="footer-links-small">
+                <a href="/privacy">Privacy Policy</a>
+                <a href="/terms">Terms of Use</a>
+                <a href="/cookies">Cookie Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
     
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
+
+<!-- Neon Mouse Trail (Optional) -->
+<script>
+document.addEventListener('mousemove', function(e) {
+    const trail = document.createElement('div');
+    trail.className = 'mouse-trail';
+    trail.style.left = e.pageX + 'px';
+    trail.style.top = e.pageY + 'px';
+    trail.style.background = 'radial-gradient(circle, #b0d136 0%, transparent 70%)';
+    trail.style.width = '20px';
+    trail.style.height = '20px';
+    trail.style.position = 'absolute';
+    trail.style.borderRadius = '50%';
+    trail.style.pointerEvents = 'none';
+    trail.style.zIndex = '9999';
+    trail.style.opacity = '0.3';
+    trail.style.transform = 'translate(-50%, -50%)';
+    
+    document.body.appendChild(trail);
+    
+    setTimeout(() => {
+        trail.remove();
+    }, 500);
+});
+</script>
+
 </body>
 </html>

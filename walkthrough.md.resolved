@@ -1,0 +1,222 @@
+# Knockout 2026 — Codebase Analysis
+
+## Overview
+
+**Knockout 2026** is a custom **WordPress** theme for a premium sports café/entertainment lounge located in **Kolkata, India**. The site is hosted locally via **Laragon** at `c:\laragon\www\Knockout-2026`. The theme is called `KNOCKOUT2026` (internally "Sports Cafe Theme") and is authored by *Muhammad Junaid*.
+
+> [!NOTE]
+> The project is a **pure WordPress/PHP theme** — no React, Next.js, or build tooling is involved (despite conversation history referencing React components, those were removed or are from a separate layer).
+
+---
+
+## Architecture Map
+
+```mermaid
+graph TD
+    A["WordPress Core"] --> B["KNOCKOUT2026 Theme"]
+    B --> C["functions.php<br/>(Master Orchestrator)"]
+    C --> D["inc/custom-post-types.php"]
+    C --> E["inc/acf-fields.php"]
+    C --> F["inc/enqueue-scripts.php<br/>(Legacy Duplicate)"]
+    C --> G["inc/theme-setup.php"]
+    C --> H["inc/customizer.php"]
+    B --> I["header.php"]
+    B --> J["footer.php"]
+    B --> K["front-page.php<br/>(447 lines)"]
+    B --> L["9 Page Templates"]
+    B --> M["10 Template Parts"]
+    B --> N["Assets"]
+    N --> O["CSS (style.css: 2223 lines)"]
+    N --> P["JS (4 files)"]
+    N --> Q["Images / Fonts / Video"]
+```
+
+---
+
+## Theme Structure
+
+### Core Files
+
+| File | Size | Purpose |
+|------|------|---------|
+| [functions.php](file:///c:/laragon/www/Knockout-2026/wp-content/themes/KNOCKOUT2026/functions.php) | 335 lines | Theme setup, asset enqueuing, auto-page creation, widget areas, menus, body classes |
+| [header.php](file:///c:/laragon/www/Knockout-2026/wp-content/themes/KNOCKOUT2026/header.php) | 92 lines | Glassmorphism header with neon particles canvas, nav, WhatsApp/Call CTAs, mobile toggle |
+| [footer.php](file:///c:/laragon/www/Knockout-2026/wp-content/themes/KNOCKOUT2026/footer.php) | 106 lines | 4-column grid footer (about, explore, experiences, contact), mouse trail effect |
+| [front-page.php](file:///c:/laragon/www/Knockout-2026/wp-content/themes/KNOCKOUT2026/front-page.php) | 447 lines | Homepage with video showcase, hero, Why Choose Us, services, and more |
+| [style.css](file:///c:/laragon/www/Knockout-2026/wp-content/themes/KNOCKOUT2026/style.css) | 12 lines | Theme metadata only — actual styles loaded from `assets/css/` |
+
+---
+
+### Includes (`inc/`)
+
+| File | Purpose |
+|------|---------|
+| [custom-post-types.php](file:///c:/laragon/www/Knockout-2026/wp-content/themes/KNOCKOUT2026/inc/custom-post-types.php) | Registers 3 CPTs (`food_menu`, `events`, `live_matches`) and 3 taxonomies (`menu_category`, `event_type`, `sport_type`) |
+| [acf-fields.php](file:///c:/laragon/www/Knockout-2026/wp-content/themes/KNOCKOUT2026/inc/acf-fields.php) | ACF field groups for menu items (price, spicy, gluten-free, vegetarian), events (date, time, cover, featured), matches (teams, date, time, channel, live status) |
+| [enqueue-scripts.php](file:///c:/laragon/www/Knockout-2026/wp-content/themes/KNOCKOUT2026/inc/enqueue-scripts.php) | **Legacy/duplicate** `wp_enqueue_scripts` — superseded by `functions.php` |
+| [theme-setup.php](file:///c:/laragon/www/Knockout-2026/wp-content/themes/KNOCKOUT2026/inc/theme-setup.php) | Theme support setup |
+| [customizer.php](file:///c:/laragon/www/Knockout-2026/wp-content/themes/KNOCKOUT2026/inc/customizer.php) | Customizer options (empty) |
+
+> [!WARNING]
+> `inc/enqueue-scripts.php` duplicates the asset enqueuing already handled in `functions.php` with different handle names (`sports-cafe-*` vs `knockout-*`). These may conflict if both are active.
+
+---
+
+### Page Templates (9 total)
+
+| Template | Status |
+|----------|--------|
+| [page-activities.php](file:///c:/laragon/www/Knockout-2026/wp-content/themes/KNOCKOUT2026/page-templates/page-activities.php) | ✅ Has content (3.7 KB) |
+| [page-blog.php](file:///c:/laragon/www/Knockout-2026/wp-content/themes/KNOCKOUT2026/page-templates/page-blog.php) | ✅ Has content (3.6 KB) |
+| [page-contact.php](file:///c:/laragon/www/Knockout-2026/wp-content/themes/KNOCKOUT2026/page-templates/page-contact.php) | ✅ Has content (3.0 KB) |
+| [page-events.php](file:///c:/laragon/www/Knockout-2026/wp-content/themes/KNOCKOUT2026/page-templates/page-events.php) | ✅ Has content (2.7 KB) |
+| [page-gallery.php](file:///c:/laragon/www/Knockout-2026/wp-content/themes/KNOCKOUT2026/page-templates/page-gallery.php) | ✅ Has content (1.9 KB) |
+| [page-menu.php](file:///c:/laragon/www/Knockout-2026/wp-content/themes/KNOCKOUT2026/page-templates/page-menu.php) | ✅ Has content (7.8 KB) |
+| [page-games.php](file:///c:/laragon/www/Knockout-2026/wp-content/themes/KNOCKOUT2026/page-templates/page-games.php) | ⚠️ Empty |
+| [page-live-sports.php](file:///c:/laragon/www/Knockout-2026/wp-content/themes/KNOCKOUT2026/page-templates/page-live-sports.php) | ⚠️ Empty |
+| [page-reservation.php](file:///c:/laragon/www/Knockout-2026/wp-content/themes/KNOCKOUT2026/page-templates/page-reservation.php) | ⚠️ Empty |
+
+---
+
+### Template Parts
+
+```
+template-parts/
+├── header/
+│   ├── main-navigation.php    (empty)
+│   ├── mobile-menu.php        (empty)
+│   └── top-bar.php            (empty)
+├── footer/
+│   ├── copyright.php          (empty)
+│   └── widget-area.php        (empty)
+└── homepage/
+    ├── hero.php               (1.9 KB)
+    ├── events-preview.php     (empty)
+    ├── happy-hour.php         (empty)
+    ├── live-matches.php       (empty)
+    └── menu-highlights.php    (empty)
+```
+
+> [!IMPORTANT]
+> Most template parts are **empty stubs**. The header, footer, and homepage logic is currently hardcoded directly in `header.php`, `footer.php`, and `front-page.php` rather than using these partials.
+
+---
+
+### Assets
+
+#### CSS
+
+| File | Size | Purpose |
+|------|------|---------|
+| [style.css](file:///c:/laragon/www/Knockout-2026/wp-content/themes/KNOCKOUT2026/assets/css/style.css) | **46.5 KB** (2223 lines) | Master stylesheet — design system variables, base styles, glassmorphism, neon effects, header, navigation, video showcase, hero, features, services, and all homepage sections |
+| [responsive.css](file:///c:/laragon/www/Knockout-2026/wp-content/themes/KNOCKOUT2026/assets/css/responsive.css) | 3.2 KB | Mobile/tablet media queries |
+| [animations.css](file:///c:/laragon/www/Knockout-2026/wp-content/themes/KNOCKOUT2026/assets/css/animations.css) | 3.0 KB | Keyframe animations |
+| `pages/page-base.css` | 987 B | Shared page template styles |
+| `pages/blog.css` | 2.0 KB | Blog page overrides |
+| `pages/contact.css` | 1.0 KB | Contact page overrides |
+| `pages/activities.css` | 173 B | Activities page (minimal) |
+| `pages/events.css` | 141 B | Events page (minimal) |
+| `pages/gallery.css` | 149 B | Gallery page (minimal) |
+
+#### JavaScript
+
+| File | Purpose |
+|------|---------|
+| [main.js](file:///c:/laragon/www/Knockout-2026/wp-content/themes/KNOCKOUT2026/assets/js/main.js) | Core interactions, AJAX, general behaviour |
+| [animations.js](file:///c:/laragon/www/Knockout-2026/wp-content/themes/KNOCKOUT2026/assets/js/animations.js) | Scroll-triggered and page-load animations |
+| [navigation.js](file:///c:/laragon/www/Knockout-2026/wp-content/themes/KNOCKOUT2026/assets/js/navigation.js) | Mobile menu toggle, scroll-based header behaviour |
+| [particles.js](file:///c:/laragon/www/Knockout-2026/wp-content/themes/KNOCKOUT2026/assets/js/particles.js) | `<canvas>` neon particle background |
+
+---
+
+## Design System
+
+The theme uses a **dark premium aesthetic** with neon accents:
+
+| Token | Value | Usage |
+|-------|-------|-------|
+| `--black` | `#000000` | Primary background |
+| `--neon` / `--neon-green` | `#b0d136` | Accent color throughout |
+| `--neon-glow` | `rgba(176, 209, 54, 0.5)` | Glow/shadow effects |
+| `--gradient-1` | Gold (`#ffd700`) | Gradient text |
+| `--gradient-2` | Cyan (`#00ffff`) | Gradient text |
+| Font primary | `Roboto` | Body text |
+| Font display | `Alphacorsa Personal Use` | Logo/display headings |
+
+**Key visual effects:**
+- Glassmorphism (`backdrop-filter: blur`) on header and cards
+- Neon glow text shadows and pulsing animations
+- Canvas-based particle background
+- Mouse trail effect (footer.php inline script)
+- Scroll-triggered fade-in/slide-up animations
+
+---
+
+## Custom Post Types & Taxonomies
+
+```mermaid
+graph LR
+    FM["food_menu CPT"] --> MC["menu_category (taxonomy)"]
+    EV["events CPT"] --> ET["event_type (taxonomy)"]
+    LM["live_matches CPT"] --> ST["sport_type (taxonomy)"]
+```
+
+Each CPT has ACF field groups for structured data entry (prices, dates, times, etc.).
+
+---
+
+## External Dependencies
+
+| Dependency | Type | Source |
+|------------|------|--------|
+| **jQuery** | JS | WordPress bundled |
+| **Font Awesome 5.15.4** | CSS | CDN (cdnjs) |
+| **Google Fonts** (Roboto) | CSS | Google CDN |
+| **Alphacorsa Font** | CSS | onlinewebfonts.com |
+| **ACF (Advanced Custom Fields)** | Plugin | Required (fields defined but plugin not installed) |
+
+> [!CAUTION]
+> **ACF is not installed** in `wp-content/plugins/`. The `acf-fields.php` include will silently fail (`if (function_exists('acf_add_local_field_group'))` guard). The CPTs will work, but custom fields won't be available in the admin until ACF is installed.
+
+---
+
+## Key Observations & Issues
+
+### ⚠️ Issues Found
+
+1. **Duplicate enqueue file** — `inc/enqueue-scripts.php` registers the same assets with different handles as `functions.php`, potentially causing double-loading or conflicts
+2. **ACF plugin missing** — Custom field groups are defined but ACF isn't installed
+3. **Empty template parts** — 8 of 10 template parts are empty; all logic is hardcoded in main templates
+4. **Empty page templates** — `page-games.php`, `page-live-sports.php`, `page-reservation.php` are empty stubs
+5. **Hardcoded phone/email** — `+919876543210` and `hello@knockout.in` are placeholder values hardcoded in header and footer
+6. **Hardcoded address** — `123 Park Street, Kolkata - 700016` is a placeholder
+7. **`flush_rewrite_rules()` on every init** — Called on every page load inside `sports_cafe_register_post_types()`, which is a performance issue (should only flush on activation)
+8. **Social links are `#` placeholders** — Footer social links point to `#`
+9. **Footer links use absolute paths** (`/about`, `/menu`) instead of `home_url()` — will break on subdirectory installs
+10. **Mouse trail script in footer** — Inline JS creating DOM elements on every `mousemove` can impact performance
+
+### ✅ Things Done Well
+
+1. **Clean design system** — Well-organized CSS variables for consistent theming
+2. **Auto page creation** — Theme automatically creates key pages with correct templates on activation
+3. **Primary menu auto-setup** — Creates and assigns the navigation menu on theme activation
+4. **Proper script localization** — AJAX URL and nonce properly localized
+5. **Responsive design** — Separate responsive CSS and mobile menu implementation
+6. **Gutenberg support** — All CPTs have `show_in_rest` enabled
+7. **Conditional CSS loading** — Page-template-specific styles only load on relevant pages
+
+---
+
+## File Count Summary
+
+| Category | Count |
+|----------|-------|
+| PHP files (theme) | ~22 |
+| CSS files | 9 |
+| JS files | 4 |
+| Page templates | 9 (6 populated, 3 empty) |
+| Template parts | 10 (2 populated, 8 empty) |
+| Custom post types | 3 |
+| Taxonomies | 3 |
+
+**Total theme lines of code:** ~3,600+ (PHP + CSS + JS)
