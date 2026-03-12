@@ -100,6 +100,14 @@ function knockout_premium_scripts()
 
     if (is_page_template('page-templates/page-activities.php')) {
         wp_enqueue_style('knockout-page-activities', get_template_directory_uri() . '/assets/css/pages/activities.css', array('knockout-style'), $theme_version);
+
+        // Orbitron + Rajdhani fonts used by the activities page
+        wp_enqueue_style(
+            'knockout-gaming-fonts',
+            'https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap',
+            array(),
+            null
+        );
     }
     if (is_page_template('page-templates/page-menu.php')) {
         // (Optional) add later if Menu needs page-only overrides
@@ -120,7 +128,7 @@ function knockout_premium_scripts()
     // JavaScript
     wp_enqueue_script(
         'knockout-particles',
-        get_template_directory_uri() . '/assets/js/particles.js',
+        get_template_directory_uri() . '/assets/js/particle.js',
         array(),
         $theme_version,
         true
@@ -150,6 +158,17 @@ function knockout_premium_scripts()
         $theme_version,
         true
     );
+
+    // Activities page JS (particles, parallax, fade-in observers)
+    if (is_page_template('page-templates/page-activities.php')) {
+        wp_enqueue_script(
+            'knockout-activities',
+            get_template_directory_uri() . '/assets/js/activities.js',
+            array(),
+            $theme_version,
+            true
+        );
+    }
 
     // Localize script for AJAX (if needed)
     wp_localize_script('knockout-main', 'knockout_ajax', array(

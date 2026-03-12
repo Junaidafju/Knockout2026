@@ -69,11 +69,11 @@ get_header(); ?>
                 <div class="intro-image animate-slide-left">
                     <div class="image-frame">
                         <div class="frame-glow"></div>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-1.jpg"
+                        <img src="https://www.propvestors.in/wp-content/uploads/2023/06/ps-srijan-corporate-park-project-1.webp"
                             alt="KnockOut Interior">
                         <div class="experience-badge">
-                            <span class="badge-number">6</span>
-                            <span class="badge-text">Years of<br>Excellence</span>
+                            <span class="badge-number">1st</span>
+                            <span class="badge-text">Sports Cafe<br>in Kolkata</span>
                         </div>
                     </div>
                 </div>
@@ -110,7 +110,8 @@ get_header(); ?>
         <div class="container">
             <div class="vision-grid">
                 <div class="vision-image animate-fade-in">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vision.jpg" alt="Our Vision">
+                    <img src="https://bilder.psywork.com/Set-of-4-blacklight-glasses-party-set-neon-green-yellow-orange-pink__174616869_03.jpg"
+                        alt="Our Vision">
                 </div>
 
                 <div class="vision-content animate-slide-left">
@@ -194,7 +195,7 @@ get_header(); ?>
                 <div class="leader-image animate-scale">
                     <div class="image-frame premium-frame">
                         <div class="frame-neon"></div>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/leader.jpg"
+                        <img src="https://theknockout.co/wp-content/themes/knockout/assets/images/ceo.svg"
                             alt="Mr. Sumit Bathwal">
                         <div class="experience-tag">
                             <span>10+ Years</span>
