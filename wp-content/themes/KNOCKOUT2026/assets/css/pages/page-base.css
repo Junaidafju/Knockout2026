@@ -1,8 +1,8 @@
 .page-header {
     padding: 120px 0 30px;
     background: radial-gradient(circle at 30% 10%, rgba(176, 209, 54, 0.10), transparent 55%),
-                radial-gradient(circle at 80% 0%, rgba(51, 182, 202, 0.8), transparent 45%),
-                linear-gradient(180deg, #050505 0%, #000000 100%);
+        radial-gradient(circle at 80% 0%, rgba(94, 202, 51, 0.8), transparent 45%),
+        linear-gradient(180deg, #050505 0%, #000000 100%);
 }
 
 .page-title {
@@ -30,7 +30,7 @@
     padding: 40px 0 80px;
 }
 
-.page-intro p + p {
+.page-intro p+p {
     margin-top: 10px;
     opacity: 0.9;
 }
@@ -45,8 +45,8 @@
     .page-header {
         padding: 110px 0 24px;
     }
+
     .page-title {
         font-size: 32px;
     }
 }
-

@@ -101,3 +101,69 @@
     }
 }
 
+/* ========== BLOG SINGLE STYLES ========== */
+.blog-single-section {
+    background: #0a0a0f;
+}
+
+.blog-single {
+    max-width: 850px;
+    margin: auto;
+    color: #e6e6e6;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8;
+}
+
+.blog-title {
+    font-size: 38px;
+    margin-bottom: 15px;
+    color: #fff;
+    font-family: var(--font-secondary);
+}
+
+.blog-meta {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.blog-featured-image img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    object-fit: cover;
+}
+
+.blog-content p {
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+.blog-content h2,
+.blog-content h3 {
+    margin-top: 35px;
+    margin-bottom: 15px;
+    color: #00E5FF;
+    /* Or KO neon color: var(--neon); but sticking to user plan */
+}
+
+.blog-content ul {
+    margin-left: 20px;
+    margin-bottom: 25px;
+}
+
+.blog-content li {
+    margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+    .blog-title {
+        font-size: 26px;
+    }
+
+    .blog-content p {
+        font-size: 16px;
+    }
+}

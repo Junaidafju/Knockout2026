@@ -24,6 +24,7 @@ function knockout_premium_setup()
         'style',
         'script'
     ));
+    add_theme_support('wp-block-styles');
     add_theme_support('align-wide');
     add_theme_support('responsive-embeds');
 
@@ -373,3 +374,153 @@ function knockout_theme_version()
 {
     return wp_get_theme()->get('Version');
 }
+
+/**
+ * AJAX Handler for Contact Form Submission
+ */
+add_action('wp_ajax_nopriv_knockout_submit_contact', 'knockout_ajax_submit_contact');
+add_action('wp_ajax_knockout_submit_contact', 'knockout_ajax_submit_contact');
+
+function knockout_ajax_submit_contact()
+{
+    if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+        wp_send_json_error(array('message' => 'Invalid request method.'));
+    }
+
+    // Verify Nonce
+    if (!isset($_POST['contact_nonce']) || !wp_verify_nonce($_POST['contact_nonce'], 'knockout_contact_form')) {
+        wp_send_json_error(array('message' => 'Security verification failed. Please refresh the page and try again.'));
+    }
+
+    // Sanitize Input Data
+    $name = sanitize_text_field($_POST['contact_name'] ?? '');
+    $email = sanitize_email($_POST['contact_email'] ?? '');
+    $phone = sanitize_text_field($_POST['contact_phone'] ?? '');
+    $subject_raw = sanitize_text_field($_POST['contact_subject'] ?? '');
+    $message = sanitize_textarea_field($_POST['contact_message'] ?? '');
+    $newsletter = isset($_POST['contact_newsletter']) ? 'Yes' : 'No';
+
+    // Map subject correctly
+    $subjects = array(
+        'bowling' => 'Bowling Lane Booking',
+        'arcade' => 'Arcade Games',
+        'birthday' => 'Birthday Party',
+        'corporate' => 'Corporate Event',
+        'league' => 'League Registration',
+        'general' => 'General Question'
+    );
+    $subject = isset($subjects[$subject_raw]) ? $subjects[$subject_raw] : 'General Inquiry';
+
+    // Basic Validation
+    if (empty($name) || empty($email) || empty($message)) {
+        wp_send_json_error(array('message' => 'Please fill in all required fields.'));
+    }
+    if (!is_email($email)) {
+        wp_send_json_error(array('message' => 'Please provide a valid email address.'));
+    }
+
+    // Setup Email Details for Admin (You can add multiple emails to this array)
+    $to = array(
+        'knockoutkolkata@gmail.com',
+        'jusjumpinmarketing@gmail.com',
+        'junaidafju@gmail.com'
+    );
+    $admin_subject = "New Contact Form Submission: $subject by $name";
+
+    // Admin Email HTML Template
+    $admin_body = "
+    <div style='font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; border: 1px solid #ddd; border-radius: 10px;'>
+        <h2 style='color: #b0d136; text-align: center; background: #0a0a0f; padding: 15px; border-radius: 5px;'>KnockOut Contact Request</h2>
+        <p><strong>Name:</strong> {$name}</p>
+        <p><strong>Email:</strong> <a href='mailto:{$email}'>{$email}</a></p>
+        <p><strong>Phone:</strong> {$phone}</p>
+        <p><strong>Subject:</strong> {$subject}</p>
+        <p><strong>Newsletter Opt-in:</strong> {$newsletter}</p>
+        <hr>
+        <h3>Message:</h3>
+        <p style='background: #f9f9f9; padding: 15px; border-radius: 5px; color: #333;'>{$message}</p>
+        <br>
+        <p style='font-size: 12px; color: #888;'>This email was sent from the KnockOut website contact form.</p>
+    </div>";
+
+    $headers = array('Content-Type: text/html; charset=UTF-8');
+    $headers[] = "Reply-To: {$name} <{$email}>";
+
+    // Send Email to Admin
+    $mail_sent = wp_mail($to, $admin_subject, $admin_body, $headers);
+
+    if ($mail_sent) {
+        // Setup Auto Reply for Customer
+        $user_subject = "We have received your request - KnockOut Sports Café";
+
+        // User Email HTML Template
+        $user_body = "
+        <div style='font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; border: 1px solid #ddd; border-radius: 10px; background: #fafafa;'>
+            <div style='text-align: center; padding: 20px; background: #0a0a0f; border-radius: 10px 10px 0 0;'>
+                <h2 style='color: #b0d136; margin: 0;'>Thank you for reaching out!</h2>
+            </div>
+            <div style='padding: 20px; color: #333;'>
+                <p>Hi {$name},</p>
+                <p>We have received your feedback/request regarding <strong>{$subject}</strong>.</p>
+                <p>One of our representatives will reach out to you soon to assist you further.</p>
+                <p><strong>For a faster reply, please WhatsApp us at:</strong><br>
+                <a href='https://wa.me/919147763399' style='display: inline-block; margin-top: 10px; padding: 10px 20px; background: #25D366; color: #fff; text-decoration: none; border-radius: 5px; font-weight: bold;'>WhatsApp Us</a></p>
+                <hr style='border: 0; border-top: 1px solid #eee; margin: 20px 0;'>
+                <p>Best regards,<br>
+                <strong>KnockOut Sports Café</strong><br>
+                Sector 5, Kolkata</p>
+            </div>
+        </div>";
+
+        // Send Auto Reply to User
+        wp_mail($email, $user_subject, $user_body, $headers);
+
+        wp_send_json_success(array('message' => 'Thank you! Your message has been sent successfully. Please check your email inbox.'));
+    } else {
+        global $knockout_mail_error;
+        $err_msg = !empty($knockout_mail_error) ? $knockout_mail_error : 'There was a problem authenticating with Gmail. Please check your App Password or SSL settings.';
+        wp_send_json_error(array('message' => 'Failed to send properly. Error: ' . esc_html($err_msg)));
+    }
+}
+
+/**
+ * Capture exact wp_mail errors
+ */
+function knockout_capture_mail_error($wp_error)
+{
+    global $knockout_mail_error;
+    $knockout_mail_error = $wp_error->get_error_message();
+}
+add_action('wp_mail_failed', 'knockout_capture_mail_error');
+
+/**
+ * Configure PHPMailer to use secure SMTP if credentials are set in wp-config.php.
+ */
+function knockout_secure_smtp_setup($phpmailer)
+{
+    // Only intercept if SMTP_USER is defined securely in wp-config.php
+    if (defined('SMTP_USER') && defined('SMTP_PASS') && defined('SMTP_HOST')) {
+        $phpmailer->isSMTP();
+        $phpmailer->Host = SMTP_HOST;
+        $phpmailer->SMTPAuth = defined('SMTP_AUTH') ? SMTP_AUTH : true;
+        $phpmailer->Port = defined('SMTP_PORT') ? SMTP_PORT : 587;
+        $phpmailer->SMTPSecure = defined('SMTP_SECURE') ? SMTP_SECURE : 'tls';
+        $phpmailer->Username = SMTP_USER;
+        $phpmailer->Password = SMTP_PASS;
+
+        $from_email = defined('SMTP_FROM') ? SMTP_FROM : SMTP_USER;
+        $from_name = defined('SMTP_NAME') ? SMTP_NAME : 'KnockOut Sports Café';
+
+        $phpmailer->setFrom($from_email, $from_name);
+
+        // Bypass SSL verification for Localhost (Laragon/XAMPP)
+        $phpmailer->SMTPOptions = array(
+            'ssl' => array(
+                'verify_peer' => false,
+                'verify_peer_name' => false,
+                'allow_self_signed' => true
+            )
+        );
+    }
+}
+add_action('phpmailer_init', 'knockout_secure_smtp_setup');

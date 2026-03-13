@@ -20,26 +20,26 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'Knockout-2026' );
+define('DB_NAME', 'Knockout-2026');
 
 /** Database username */
-define( 'DB_USER', 'root' );
+define('DB_USER', 'root');
 
 /** Database password */
-define( 'DB_PASSWORD', '' );
+define('DB_PASSWORD', '');
 
 /** Database hostname */
-define( 'DB_HOST', 'localhost' );
+define('DB_HOST', 'localhost');
 
 /** Database charset to use in creating database tables. */
-define( 'DB_CHARSET', 'utf8mb4' );
+define('DB_CHARSET', 'utf8mb4');
 
 /** The database collate type. Don't change this if in doubt. */
-define( 'DB_COLLATE', '' );
+define('DB_COLLATE', '');
 
-if ( !defined('WP_CLI') ) {
-    define( 'WP_SITEURL', $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] );
-    define( 'WP_HOME',    $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] );
+if (!defined('WP_CLI')) {
+    define('WP_SITEURL', $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST']);
+    define('WP_HOME', $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST']);
 }
 
 
@@ -55,14 +55,14 @@ if ( !defined('WP_CLI') ) {
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         '0ygnDZE9XppZnAjtTBKoVwJzSg10Hnd3GZbyMPU78z4f2MJf3ricZKuaV566CARG' );
-define( 'SECURE_AUTH_KEY',  '0ygnDZE9XppZnAjtTBKoVwJzSg10Hnd3GZbyMPU78z4f2MJf3ricZKuaV566CARG' );
-define( 'LOGGED_IN_KEY',    '0ygnDZE9XppZnAjtTBKoVwJzSg10Hnd3GZbyMPU78z4f2MJf3ricZKuaV566CARG' );
-define( 'NONCE_KEY',        '0ygnDZE9XppZnAjtTBKoVwJzSg10Hnd3GZbyMPU78z4f2MJf3ricZKuaV566CARG' );
-define( 'AUTH_SALT',        '0ygnDZE9XppZnAjtTBKoVwJzSg10Hnd3GZbyMPU78z4f2MJf3ricZKuaV566CARG' );
-define( 'SECURE_AUTH_SALT', '0ygnDZE9XppZnAjtTBKoVwJzSg10Hnd3GZbyMPU78z4f2MJf3ricZKuaV566CARG' );
-define( 'LOGGED_IN_SALT',   '0ygnDZE9XppZnAjtTBKoVwJzSg10Hnd3GZbyMPU78z4f2MJf3ricZKuaV566CARG' );
-define( 'NONCE_SALT',       '0ygnDZE9XppZnAjtTBKoVwJzSg10Hnd3GZbyMPU78z4f2MJf3ricZKuaV566CARG' );
+define('AUTH_KEY', '0ygnDZE9XppZnAjtTBKoVwJzSg10Hnd3GZbyMPU78z4f2MJf3ricZKuaV566CARG');
+define('SECURE_AUTH_KEY', '0ygnDZE9XppZnAjtTBKoVwJzSg10Hnd3GZbyMPU78z4f2MJf3ricZKuaV566CARG');
+define('LOGGED_IN_KEY', '0ygnDZE9XppZnAjtTBKoVwJzSg10Hnd3GZbyMPU78z4f2MJf3ricZKuaV566CARG');
+define('NONCE_KEY', '0ygnDZE9XppZnAjtTBKoVwJzSg10Hnd3GZbyMPU78z4f2MJf3ricZKuaV566CARG');
+define('AUTH_SALT', '0ygnDZE9XppZnAjtTBKoVwJzSg10Hnd3GZbyMPU78z4f2MJf3ricZKuaV566CARG');
+define('SECURE_AUTH_SALT', '0ygnDZE9XppZnAjtTBKoVwJzSg10Hnd3GZbyMPU78z4f2MJf3ricZKuaV566CARG');
+define('LOGGED_IN_SALT', '0ygnDZE9XppZnAjtTBKoVwJzSg10Hnd3GZbyMPU78z4f2MJf3ricZKuaV566CARG');
+define('NONCE_SALT', '0ygnDZE9XppZnAjtTBKoVwJzSg10Hnd3GZbyMPU78z4f2MJf3ricZKuaV566CARG');
 
 /**#@-*/
 
@@ -92,7 +92,7 @@ $table_prefix = 'wp_';
  *
  * @link https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/
  */
-define( 'WP_DEBUG', false );
+define('WP_DEBUG', false);
 
 /* Add any custom values between this line and the "stop editing" line. */
 
@@ -101,9 +101,21 @@ define( 'WP_DEBUG', false );
 /* That's all, stop editing! Happy publishing. */
 
 /** Absolute path to the WordPress directory. */
-if ( ! defined( 'ABSPATH' ) ) {
-	define( 'ABSPATH', __DIR__ . '/' );
+if (!defined('ABSPATH')) {
+    define('ABSPATH', __DIR__ . '/');
 }
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
+/** 
+ * Custom SMTP Settings for KnockOut Contact Form
+ * Keep this in wp-config.php so credentials stay out of the theme!
+ */
+define('SMTP_HOST', 'smtp.gmail.com');            // Your SMTP server (e.g., smtp.gmail.com)
+define('SMTP_PORT', 587);                         // SMTP Port (587 for TLS, 465 for SSL)
+define('SMTP_SECURE', 'tls');                       // Encryption method (tls or ssl)
+define('SMTP_AUTH', true);                        // Use SMTP authentication (true/false)
+define('SMTP_USER', 'knockoutkolkata@gmail.com'); // Your full email address
+define('SMTP_PASS', 'autzdwntzlybvhdp');// Your App Password (No spaces)
+define('SMTP_FROM', 'knockoutkolkata@gmail.com'); // The "From" email address
+define('SMTP_NAME', 'KnockOut Sports Café');      // The "From" name
