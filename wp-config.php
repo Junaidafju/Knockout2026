@@ -119,3 +119,4 @@ define('SMTP_USER', 'knockoutkolkata@gmail.com'); // Your full email address
 define('SMTP_PASS', 'autzdwntzlybvhdp');// Your App Password (No spaces)
 define('SMTP_FROM', 'knockoutkolkata@gmail.com'); // The "From" email address
 define('SMTP_NAME', 'KnockOut Sports Café');      // The "From" name
+

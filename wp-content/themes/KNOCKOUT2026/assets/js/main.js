@@ -198,4 +198,16 @@ jQuery(document).ready(function ($) {
             }
         });
     })();
+
+    // ===== Footer Glare Effect =====
+    const footer = document.querySelector('.site-footer');
+    if (footer) {
+        footer.addEventListener('mousemove', function (e) {
+            const rect = footer.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            footer.style.setProperty('--mouse-x', `${x}px`);
+            footer.style.setProperty('--mouse-y', `${y}px`);
+        });
+    }
 });
