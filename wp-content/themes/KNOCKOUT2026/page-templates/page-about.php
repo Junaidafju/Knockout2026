@@ -15,8 +15,10 @@ get_header(); ?>
         <div class="hero-overlay"></div>
         <div class="container">
             <div class="hero-content animate-fade-in">
-                <span class="hero-subtitle gradient-text">DISCOVER KNOCKOUT</span>
-                <h1 class="hero-title">Where Sports<span class="gradient-text">Meets</span>Nightlife</h1>
+                <span class="hero-subtitle gradient-text">ABOUT KNOCKOUT</span>
+                <h1 class="hero-title">The <span class="gradient-text">Ultimate Sports Bar</span>and Restaurant In
+                    Kolkata
+                </h1>
                 <div class="hero-divider"></div>
             </div>
         </div>
@@ -34,35 +36,40 @@ get_header(); ?>
             <div class="intro-grid">
                 <div class="intro-content animate-slide-right">
                     <h2 class="section-title">About <span class="gradient-text">KnockOut</span></h2>
-                    <p class="intro-text">Kolkata's Premier Experiential Hub where the thrill of cutting-edge sports
-                        technology meets the indulgence of a lavish culinary experience.</p>
-                    <p class="intro-text">We are more than just a venue - we're a destination that transforms ordinary
-                        moments into extraordinary experiences, bringing together the excitement of sports with the
-                        pleasure of dining.</p>
+                    <p class="intro-text">Welcome to Knockout, Kolkata’s one & only truly sports bar, where you don’t
+                        just watch the game but play a variety of sports while indulging in a lavish culinary experience
+                        and a range of drinks & beverages to set the mood right.</p>
+                    <p class="intro-text">Knockout isn’t just any sports bar - it’s a premier experiential hub where you
+                        can enjoy cutting-edge sports technology while sipping on your favourite drinks with your
+                        friends. At Knockout, you don’t just watch the game but be the game. Dive into our large range
+                        of indoor games, from bowling to arcade, shooting games to pool tables, at Knockout we ensure
+                        you get the real thrill of the game.
+                    </p>
 
                     <!-- Feature Highlights -->
                     <div class="intro-features">
                         <div class="intro-feature">
                             <div class="feature-icon">📍</div>
                             <div class="feature-text">
-                                <h4>Premium Location</h4>
-                                <p>Strategically located in the heart of Kolkata for easy accessibility.</p>
+                                <h4>Elite Hangout Spot</h4>
+                                <p>Conveniently located near Saltlake Sector V for your convenience and easy access</p>
                             </div>
                         </div>
                         <div class="intro-feature">
                             <div class="feature-icon">✨</div>
                             <div class="feature-text">
-                                <h4>Modern Ambiance</h4>
-                                <p>Contemporary design blending sports energy with sophisticated dining.</p>
+                                <h4>Electrifying Ambiance</h4>
+                                <p>Feel the stadium-like thrill of live sports with premium hospitality & luxe vibes</p>
                             </div>
                         </div>
                         <div class="intro-feature">
                             <div class="feature-icon">🤝</div>
                             <div class="feature-text">
-                                <h4>Community Hub</h4>
-                                <p>A gathering place for sports enthusiasts and food lovers alike.</p>
+                                <h4>Dine & Hangout Zone</h4>
+                                <p>A perfect place where you can enjoy lip-smacking food with great company</p>
                             </div>
                         </div>
+
                     </div>
                 </div>
 
@@ -90,12 +97,12 @@ get_header(); ?>
                     <div class="stat-label">Happy Customers</div>
                 </div>
                 <div class="stat-card glass-card">
-                    <div class="stat-number gradient-text">50+</div>
+                    <div class="stat-number gradient-text">15+</div>
                     <div class="stat-label">Games & Activities</div>
                 </div>
                 <div class="stat-card glass-card">
-                    <div class="stat-number gradient-text">6</div>
-                    <div class="stat-label">Bowling Lanes</div>
+                    <div class="stat-number gradient-text">6 LANE</div>
+                    <div class="stat-label">Bowling Alley</div>
                 </div>
                 <div class="stat-card glass-card">
                     <div class="stat-number gradient-text">100+</div>
@@ -116,28 +123,29 @@ get_header(); ?>
 
                 <div class="vision-content animate-slide-left">
                     <h2 class="section-title">Our <span class="gradient-text">Vision</span></h2>
-                    <p class="vision-text">Our vision is to transcend the ordinary, offering a dynamic and immersive
-                        environment that caters to every facet of leisure. We envision a space where friends, families,
-                        and corporate teams can connect, compete, and celebrate, creating unforgettable memories through
-                        a seamless fusion of active entertainment, sophisticated dining, and vibrant social spaces.</p>
+                    <p class="vision-text">At Knockout, we aim to transcend beyond an ordinary sports bar. Knockout
+                        offers an electrifying environment for sports & food enthusiasts alike. At Knockout Sports Bar &
+                        Restaurant, people can play, dance, eat & connect like there's no tomorrow. We encourage hearty
+                        competitions, limitless celebration and seamless entertainment at vibrant social places.
+                    </p>
 
                     <div class="vision-features">
                         <div class="vision-feature">
                             <div class="feature-icon">🎯</div>
-                            <h4>State-of-the-Art Facilities</h4>
-                            <p>Featuring the latest in sports simulation technology and interactive gaming.</p>
+                            <h4>Next-Gen Sports Entertainment</h4>
+                            <p>Featuring cutting-edge sports simulation & next-gen gaming technology.</p>
                         </div>
 
                         <div class="vision-feature">
                             <div class="feature-icon">🍽️</div>
-                            <h4>Gourmet Dining</h4>
-                            <p>Curated menu featuring international cuisine and signature cocktails.</p>
+                            <h4>Curated Culinary Experience</h4>
+                            <p>Thoughtfully crafted delectable menu to fulfill every winner’s appetite.</p>
                         </div>
 
                         <div class="vision-feature">
                             <div class="feature-icon">🎉</div>
-                            <h4>Exclusive Events</h4>
-                            <p>Host your next corporate event or private party in our premium spaces.</p>
+                            <h4>VIP nights with Knockout</h4>
+                            <p>Level up your corporate parties/birthday bashes with Knockout energy.</p>
                         </div>
                     </div>
                 </div>
@@ -158,25 +166,27 @@ get_header(); ?>
                 <div class="value-card glass-card">
                     <div class="value-icon">⚡</div>
                     <h3>Excellence</h3>
-                    <p>We strive for perfection in every experience we create, from food to entertainment.</p>
+                    <p>At Knockout, from sports to spirits, we aim towards perfection for every experience we provide.
+                    </p>
                 </div>
 
                 <div class="value-card glass-card">
                     <div class="value-icon">🤝</div>
                     <h3>Community</h3>
-                    <p>Building a vibrant community of sports enthusiasts and food lovers.</p>
+                    <p>We bring food enthusiasts, sports fans, and party animals together to create a vibrant community.
+                    </p>
                 </div>
 
                 <div class="value-card glass-card">
                     <div class="value-icon">💡</div>
                     <h3>Innovation</h3>
-                    <p>Constantly evolving with cutting-edge technology and fresh concepts.</p>
+                    <p>Knockout is continuously evolving with next-gen technologies and unique concepts.</p>
                 </div>
 
                 <div class="value-card glass-card">
                     <div class="value-icon">⭐</div>
                     <h3>Quality</h3>
-                    <p>Uncompromising standards in service, food, and entertainment.</p>
+                    <p>Be it service, food, or entertainment, at Knockout, we keep our quality standards sky-high.</p>
                 </div>
             </div>
         </div>
@@ -187,7 +197,8 @@ get_header(); ?>
         <div class="container">
             <div class="section-header">
                 <span class="section-subtitle gradient-text">MEET OUR LEADER</span>
-                <h2 class="section-title">Visionary <span class="gradient-text">Leadership</span></h2>
+                <h2 class="section-title">Visionary Leadership<span class="gradient-text"> driving innovation and
+                        excellence.</span></h2>
                 <div class="neon-divider"></div>
             </div>
 
@@ -195,7 +206,7 @@ get_header(); ?>
                 <div class="leader-image animate-scale">
                     <div class="image-frame premium-frame">
                         <div class="frame-neon"></div>
-                        <img src="https://theknockout.co/wp-content/themes/knockout/assets/images/ceo.svg"
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sumitBathwal.jpg"
                             alt="Mr. Sumit Bathwal">
                         <div class="experience-tag">
                             <span>10+ Years</span>
@@ -205,16 +216,17 @@ get_header(); ?>
 
                 <div class="leader-content animate-slide-right">
                     <h3 class="leader-name gradient-text">Mr. Sumit Bathwal</h3>
-                    <p class="leader-title">Founder & CEO</p>
+                    <p class="leader-title">Founder</p>
 
                     <div class="leader-bio">
-                        <p>With over a decade of experience in hospitality and sports management, Sumit Bathwal brings
-                            visionary leadership to KnockOut. His passion for creating unique experiences and commitment
-                            to excellence drives our mission to revolutionize the sports and dining landscape in
-                            Kolkata.</p>
-                        <p>Under his leadership, KnockOut has become a premier destination that seamlessly blends
-                            cutting-edge technology with exceptional culinary experiences, setting new standards in the
-                            industry.</p>
+                        <p>With over a decade of experience in hospitality and theme park management, Sumit Bathwal
+                            brings visionary leadership to Knockout Sports Bar & Restaurant. His passion for creating
+                            one-of-a-kind experiences and his commitment are revolutionizing the sports entertainment
+                            and dining landscape in Kolkata.
+                        </p>
+                        <p>With his vision & leadership, KnockOut has started its journey to become a premier sports bar
+                            & lounge that seamlessly blends cutting-edge sports technology with exceptional culinary
+                            experiences, setting a new benchmark in the industry.</p>
                     </div>
 
                     <div class="leader-achievements">
@@ -242,73 +254,353 @@ get_header(); ?>
         </div>
     </section>
 
-    <!-- ===== TIMELINE SECTION ===== -->
-    <section class="timeline-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle gradient-text">OUR JOURNEY</span>
-                <h2 class="section-title">The KnockOut <span class="gradient-text">Story</span></h2>
-                <div class="neon-divider"></div>
+    <!-- ===== SECTION: THE KNOCKOUT STORY / TIMELINE ===== -->
+    <section class="tl-section" id="our-story">
+
+        <!-- Ambient background layers -->
+        <div class="tl-bg" aria-hidden="true">
+            <div class="tl-bg__glow tl-bg__glow--lime"></div>
+            <div class="tl-bg__glow tl-bg__glow--pink"></div>
+            <div class="tl-bg__grid"></div>
+            <div class="tl-bg__spine-glow"></div>
+        </div>
+
+        <div class="tl-container">
+
+            <!-- ── Section Header ── -->
+            <div class="tl-header">
+                <span class="tl-header__eyebrow">The Knockout Story</span>
+                <h2 class="tl-header__title">
+                    From Vision to <em class="tl-grad">Destination</em>
+                </h2>
+                <span class="tl-header__divider" aria-hidden="true"></span>
             </div>
 
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-year gradient-text">2018</div>
-                    <div class="timeline-content glass-card">
-                        <h4>The Vision</h4>
-                        <p>Concept born - envisioning Kolkata's first premium sports entertainment destination.</p>
-                    </div>
-                </div>
+            <!-- ── Timeline Track ── -->
+            <div class="tl-track">
 
-                <div class="timeline-item">
-                    <div class="timeline-year gradient-text">2019</div>
-                    <div class="timeline-content glass-card">
-                        <h4>Groundbreaking</h4>
-                        <p>Construction begins on our flagship location in the heart of Kolkata.</p>
-                    </div>
-                </div>
+                <!-- Vertical spine line running centre through all items -->
+                <span class="tl-spine" aria-hidden="true"></span>
 
-                <div class="timeline-item">
-                    <div class="timeline-year gradient-text">2020</div>
-                    <div class="timeline-content glass-card">
-                        <h4>Grand Opening</h4>
-                        <p>KnockOut opens its doors, introducing 6-lane bowling to Kolkata.</p>
-                    </div>
-                </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-year gradient-text">2022</div>
-                    <div class="timeline-content glass-card">
-                        <h4>Expansion</h4>
-                        <p>Added VR Arcade and expanded dining facilities.</p>
-                    </div>
-                </div>
+                <!--
+            ╔══════════════════════════════════════════╗
+            ║  ITEM 1 — ODD                            ║
+            ║  IMAGE (col 1)  NODE (col 2)  CONTENT (col 3) ║
+            ║  IMAGE slides in from LEFT               ║
+            ║  CONTENT slides in from RIGHT            ║
+            ║  connector inside .tl-content → LEFT     ║
+            ╚══════════════════════════════════════════╝
+            -->
+                <div class="tl-item tl-item--odd">
 
-                <div class="timeline-item">
-                    <div class="timeline-year gradient-text">2024</div>
-                    <div class="timeline-content glass-card">
-                        <h4>Today</h4>
-                        <p>Kolkata's premier destination for sports, dining & nightlife.</p>
+                    <div class="tl-image tl-anim tl-anim--left">
+                        <div class="tl-image__frame">
+                            <span class="tl-image__corner tl-image__corner--tl"></span>
+                            <span class="tl-image__corner tl-image__corner--tr"></span>
+                            <span class="tl-image__corner tl-image__corner--bl"></span>
+                            <span class="tl-image__corner tl-image__corner--br"></span>
+                            <img src="https://neonezo.com/cdn/shop/files/brightideas-green-01_grande.png?v=1726870643"
+                                alt="The Idea — KnockOut 2018" loading="lazy">
+                            <div class="tl-image__overlay"></div>
+                            <div class="tl-image__year-badge">2018</div>
+                        </div>
                     </div>
-                </div>
+
+                    <div class="tl-node-wrap" aria-hidden="true">
+                        <span class="tl-node">
+                            <span class="tl-node__ring"></span>
+                            <span class="tl-node__dot"></span>
+                        </span>
+                    </div>
+
+                    <div class="tl-content tl-anim tl-anim--right">
+                        <span class="tl-connector" aria-hidden="true"></span>
+                        <span class="tl-content__year">2018</span>
+                        <h3 class="tl-content__title">The Idea</h3>
+                        <p class="tl-content__body">To create Kolkata's first premium sports entertainment destination —
+                            where gaming, dining, and nightlife come together under one electrifying roof.</p>
+                    </div>
+
+                </div><!-- /item 1 -->
+
+
+                <!--
+            ╔══════════════════════════════════════════╗
+            ║  ITEM 2 — EVEN                           ║
+            ║  CONTENT (col 1)  NODE (col 2)  IMAGE (col 3) ║
+            ║  CONTENT slides in from LEFT             ║
+            ║  IMAGE slides in from RIGHT              ║
+            ║  connector inside .tl-content → RIGHT    ║
+            ╚══════════════════════════════════════════╝
+            -->
+                <div class="tl-item tl-item--even">
+
+                    <div class="tl-content tl-anim tl-anim--left">
+                        <span class="tl-connector" aria-hidden="true"></span>
+                        <span class="tl-content__year">2019</span>
+                        <h3 class="tl-content__title">The Concept</h3>
+                        <p class="tl-content__body">A one-of-a-kind space designed for thrill, competition, and
+                            unforgettable social experiences — built to make every visit feel like the main event.</p>
+                    </div>
+
+                    <div class="tl-node-wrap" aria-hidden="true">
+                        <span class="tl-node">
+                            <span class="tl-node__ring"></span>
+                            <span class="tl-node__dot"></span>
+                        </span>
+                    </div>
+
+                    <div class="tl-image tl-anim tl-anim--right">
+                        <div class="tl-image__frame">
+                            <span class="tl-image__corner tl-image__corner--tl"></span>
+                            <span class="tl-image__corner tl-image__corner--tr"></span>
+                            <span class="tl-image__corner tl-image__corner--bl"></span>
+                            <span class="tl-image__corner tl-image__corner--br"></span>
+                            <img src="https://scontent.fccu3-1.fna.fbcdn.net/v/t39.30808-6/482030756_122205144356094553_3531847920802826113_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=7b2446&_nc_ohc=ZMptTV899KAQ7kNvwHIZoVD&_nc_oc=AdkYpEWjExYJchHwU0ZofDPzNTEU1BpYTgy2KaImt8ICFBVYc9PzNVbOQObYYTW39v4&_nc_zt=23&_nc_ht=scontent.fccu3-1.fna&_nc_gid=9Et-3kM3kt4r6ZJ-d4qYdA&_nc_ss=8&oh=00_AfwNSCRuPh8gLxx0g0wowDoOuhwAT6Pi6ldTXkzOqQZ-TA&oe=69BDB522"
+                                alt="The Concept — KnockOut 2019" loading="lazy">
+                            <div class="tl-image__overlay"></div>
+                            <div class="tl-image__year-badge">2019</div>
+                        </div>
+                    </div>
+
+                </div><!-- /item 2 -->
+
+
+                <!--
+            ╔══════════════════════════════════════════╗
+            ║  ITEM 3 — ODD                            ║
+            ╚══════════════════════════════════════════╝
+            -->
+                <div class="tl-item tl-item--odd">
+
+                    <div class="tl-image tl-anim tl-anim--left">
+                        <div class="tl-image__frame">
+                            <span class="tl-image__corner tl-image__corner--tl"></span>
+                            <span class="tl-image__corner tl-image__corner--tr"></span>
+                            <span class="tl-image__corner tl-image__corner--bl"></span>
+                            <span class="tl-image__corner tl-image__corner--br"></span>
+                            <img src="https://www.tagvenue.com/resize/3e/02/widen-1680-noupsize;72275-electric-lounge-room.jpg"
+                                alt="The Arena — KnockOut 2020" loading="lazy">
+                            <div class="tl-image__overlay"></div>
+                            <div class="tl-image__year-badge">2020</div>
+                        </div>
+                    </div>
+
+                    <div class="tl-node-wrap" aria-hidden="true">
+                        <span class="tl-node">
+                            <span class="tl-node__ring"></span>
+                            <span class="tl-node__dot"></span>
+                        </span>
+                    </div>
+
+                    <div class="tl-content tl-anim tl-anim--right">
+                        <span class="tl-connector" aria-hidden="true"></span>
+                        <span class="tl-content__year">2020</span>
+                        <h3 class="tl-content__title">The Arena</h3>
+                        <p class="tl-content__body">Featuring Kolkata's first 6-lane bowling alley, immersive sports
+                            simulations, and high-energy arcade gaming that raised the bar for entertainment.</p>
+                    </div>
+
+                </div><!-- /item 3 -->
+
+
+                <!--
+            ╔══════════════════════════════════════════╗
+            ║  ITEM 4 — EVEN                           ║
+            ╚══════════════════════════════════════════╝
+            -->
+                <div class="tl-item tl-item--even">
+
+                    <div class="tl-content tl-anim tl-anim--left">
+                        <span class="tl-connector" aria-hidden="true"></span>
+                        <span class="tl-content__year">2021–22</span>
+                        <h3 class="tl-content__title">The Experience</h3>
+                        <p class="tl-content__body">Live sports screening, chef-crafted dining, and a premium bar lounge
+                            that elevate every visit far beyond a typical night out.</p>
+                    </div>
+
+                    <div class="tl-node-wrap" aria-hidden="true">
+                        <span class="tl-node">
+                            <span class="tl-node__ring"></span>
+                            <span class="tl-node__dot"></span>
+                        </span>
+                    </div>
+
+                    <div class="tl-image tl-anim tl-anim--right">
+                        <div class="tl-image__frame">
+                            <span class="tl-image__corner tl-image__corner--tl"></span>
+                            <span class="tl-image__corner tl-image__corner--tr"></span>
+                            <span class="tl-image__corner tl-image__corner--bl"></span>
+                            <span class="tl-image__corner tl-image__corner--br"></span>
+                            <img src="https://imgmediagumlet.lbb.in/media/2017/11/5a008771f128f90de6391318_5a00856617890b0dfd2527a6_1509984113482.jpg"
+                                alt="The Experience — KnockOut 2021-22" loading="lazy">
+                            <div class="tl-image__overlay"></div>
+                            <div class="tl-image__year-badge">2021–22</div>
+                        </div>
+                    </div>
+
+                </div><!-- /item 4 -->
+
+
+                <!--
+            ╔══════════════════════════════════════════╗
+            ║  ITEM 5 — ODD                            ║
+            ╚══════════════════════════════════════════╝
+            -->
+                <div class="tl-item tl-item--odd">
+
+                    <div class="tl-image tl-anim tl-anim--left">
+                        <div class="tl-image__frame">
+                            <span class="tl-image__corner tl-image__corner--tl"></span>
+                            <span class="tl-image__corner tl-image__corner--tr"></span>
+                            <span class="tl-image__corner tl-image__corner--bl"></span>
+                            <span class="tl-image__corner tl-image__corner--br"></span>
+                            <img src="https://images.stockcake.com/public/1/a/3/1a3ec222-376a-453b-a325-7bbb01a7c384/vibrant-dance-party-stockcake.jpg"
+                                alt="The Energy — KnockOut 2023" loading="lazy">
+                            <div class="tl-image__overlay"></div>
+                            <div class="tl-image__year-badge">2023</div>
+                        </div>
+                    </div>
+
+                    <div class="tl-node-wrap" aria-hidden="true">
+                        <span class="tl-node">
+                            <span class="tl-node__ring"></span>
+                            <span class="tl-node__dot"></span>
+                        </span>
+                    </div>
+
+                    <div class="tl-content tl-anim tl-anim--right">
+                        <span class="tl-connector" aria-hidden="true"></span>
+                        <span class="tl-content__year">2023</span>
+                        <h3 class="tl-content__title">The Energy</h3>
+                        <p class="tl-content__body">A vibrant atmosphere powered by live DJ music, creating the perfect
+                            blend of sport, entertainment, and pure Kolkata nightlife energy.</p>
+                    </div>
+
+                </div><!-- /item 5 -->
+
+
+                <!--
+            ╔══════════════════════════════════════════╗
+            ║  ITEM 6 — EVEN — FINAL ITEM              ║
+            ║  Node glows pink                         ║
+            ╚══════════════════════════════════════════╝
+            -->
+                <div class="tl-item tl-item--even tl-item--last">
+
+                    <div class="tl-content tl-anim tl-anim--left">
+                        <span class="tl-connector" aria-hidden="true"></span>
+                        <span class="tl-content__year">2024</span>
+                        <h3 class="tl-content__title">The Destination</h3>
+                        <p class="tl-content__body">Located in Salt Lake Sector V, Knockout stands as Kolkata's ultimate
+                            hub for gaming, dining, and celebration — and the journey has only just begun.</p>
+                    </div>
+
+                    <div class="tl-node-wrap" aria-hidden="true">
+                        <span class="tl-node tl-node--final">
+                            <span class="tl-node__pulse"></span>
+                            <span class="tl-node__ring"></span>
+                            <span class="tl-node__dot"></span>
+                        </span>
+                    </div>
+
+                    <div class="tl-image tl-anim tl-anim--right">
+                        <div class="tl-image__frame">
+                            <span class="tl-image__corner tl-image__corner--tl"></span>
+                            <span class="tl-image__corner tl-image__corner--tr"></span>
+                            <span class="tl-image__corner tl-image__corner--bl"></span>
+                            <span class="tl-image__corner tl-image__corner--br"></span>
+                            <img src="https://scontent.fccu3-1.fna.fbcdn.net/v/t39.30808-6/497844433_723799976841479_3106791887369961862_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=7b2446&_nc_ohc=c8DBKWkWxIgQ7kNvwE09krh&_nc_oc=AdkBxCfb9rsGVcNS2ckURTaqyHvi-VEUqPtI6soeQj2Vq4gEENGDtDn2cwcR8iDqFJU&_nc_zt=23&_nc_ht=scontent.fccu3-1.fna&_nc_gid=dHbOwp4uxirfIMQ_9_8-gA&_nc_ss=8&oh=00_AfzyDGVWVbxyZoRcbyuOCTQzdphwuUa1zTmEBN8Vqu-qdA&oe=69BDB8EC"
+                                alt="The Destination — KnockOut 2024" loading="lazy">
+                            <div class="tl-image__overlay"></div>
+                            <div class="tl-image__year-badge tl-image__year-badge--pink">2024</div>
+                        </div>
+                    </div>
+
+                </div><!-- /item 6 -->
+
+            </div><!-- /tl-track -->
+
+        </div><!-- /tl-container -->
+
+    </section><!-- /tl-section -->
+
+
+    <!-- ===== STORY CTA SECTION ===== -->
+    <section class="tl-cta-section">
+
+        <div class="tl-cta-section__glow" aria-hidden="true"></div>
+
+        <div class="tl-container">
+            <div class="tl-cta-section__card">
+
+                <span class="tl-card-corner tl-card-corner--tl" aria-hidden="true"></span>
+                <span class="tl-card-corner tl-card-corner--tr" aria-hidden="true"></span>
+                <span class="tl-card-corner tl-card-corner--bl" aria-hidden="true"></span>
+                <span class="tl-card-corner tl-card-corner--br" aria-hidden="true"></span>
+
+                <p class="tl-cta-section__eyebrow">// The Next Chapter Is Yours</p>
+                <h3 class="tl-cta-section__title">Time to go <em class="tl-grad">beyond the game!</em></h3>
+                <p class="tl-cta-section__desc">Reserve your spot &amp; discover Kolkata's first 6-lane bowling alley
+                    and ultimate party zone.</p>
+
+                <a href="<?php echo esc_url(home_url('/reservation')); ?>"
+                    class="tl-btn tl-btn--pink tl-btn--pulse tl-btn--lg">
+                    🎳 Book Your Experience
+                </a>
+
             </div>
         </div>
-    </section>
 
-    <!-- ===== CTA SECTION ===== -->
-    <section class="about-cta">
-        <div class="container">
-            <div class="cta-content glass-panel">
-                <h2>Experience the <span class="gradient-text">KnockOut</span> Difference</h2>
-                <p>Book your table now and discover why we're Kolkata's favorite sports destination.</p>
-                <div class="cta-buttons">
-                    <a href="/reservation" class="neon-cta primary-cta">Book Your Visit</a>
-                    <a href="/contact" class="neon-cta secondary-cta">Contact Us</a>
-                </div>
-            </div>
-        </div>
-    </section>
+    </section><!-- /tl-cta-section -->
+    <script>
+        (function () {
+            'use strict';
 
-</main>
+            var THRESHOLD = 0.18;    /* fraction of element visible before trigger */
+            var ROOT_MARGIN = '-50px'; /* shrink trigger zone slightly from viewport edges */
 
-<?php get_footer(); ?>
+            function initTimelineReveal() {
+
+                var animEls = document.querySelectorAll('.tl-anim--left, .tl-anim--right');
+
+                if (!animEls.length) { return; }
+
+                /* Modern path — IntersectionObserver */
+                if ('IntersectionObserver' in window) {
+
+                    var observer = new IntersectionObserver(
+                        function (entries) {
+                            entries.forEach(function (entry) {
+                                if (entry.isIntersecting) {
+                                    entry.target.classList.add('tl-anim--in');
+                                    observer.unobserve(entry.target); /* fire once only */
+                                }
+                            });
+                        },
+                        {
+                            root: null,
+                            rootMargin: ROOT_MARGIN,
+                            threshold: THRESHOLD
+                        }
+                    );
+
+                    animEls.forEach(function (el) { observer.observe(el); });
+
+                } else {
+
+                    /* Fallback — reveal everything immediately */
+                    animEls.forEach(function (el) { el.classList.add('tl-anim--in'); });
+                }
+            }
+
+            /* Wait for DOM to be ready before querying elements */
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', initTimelineReveal);
+            } else {
+                initTimelineReveal();
+            }
+
+        }());</script>
+    <?php get_footer(); ?>

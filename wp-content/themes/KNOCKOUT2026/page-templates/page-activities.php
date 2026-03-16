@@ -19,9 +19,12 @@ get_header();
         <canvas id="particle-canvas"></canvas>
         <div class="hero-content">
             <div class="glitch-wrapper">
-                <h1 class="glitch-text" data-text="EXPERIENCE THE ULTIMATE GAMING ARENA">
-                    EXPERIENCE THE ULTIMATE GAMING ARENA
+                <h1 class="glitch-text" data-text="Ultimate Sports Cafe & Gaming Arena">
+                    Ultimate Sports Cafe & Gaming Arena
                 </h1>
+                <p>Experience Electrifying Sports Bar & Lounge, Futuristic Sports Technology, Signature Spirits, Fine
+                    Dining & Live DJ Music
+                </p>
             </div>
 
             <div class="game-tags">
