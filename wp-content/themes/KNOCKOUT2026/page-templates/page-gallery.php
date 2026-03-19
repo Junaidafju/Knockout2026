@@ -17,10 +17,10 @@ get_header();
     <div class="gallery-container">
         <!-- Header Section -->
         <div class="gallery-header">
-            <h1 class="gallery-title">EXPERIENCE THE ACTION</h1>
+            <h1 class="gallery-title">Experience the Action</h1>
             <p class="gallery-subtitle">
-                Step inside our immersive sports café where gaming meets real-world sports.
-                Browse through our collection of epic moments, gaming arenas, and unforgettable events.
+                Enter a world where competition, entertainment, and nightlife collide. From bowling and sports
+                simulations to arcade games and live sports, every moment at Knockout is designed for thrill.
             </p>
         </div>
 
@@ -252,7 +252,7 @@ get_header();
                 <span class="category-badge">Action Shots</span>
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/gallery/action-3.jpg"
                     alt="Friends Celebrating"
-                    onerror="this.src='https://instagram.fccu3-1.fna.fbcdn.net/v/t51.82787-15/649224928_17964815805024139_6820442518209601063_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=107&ig_cache_key=Mzg0OTE4OTgwMTkzODExNzY5Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0NDB4OTYwLnNkci5DMyJ9&_nc_ohc=aldBgu4pfjwQ7kNvwGa6N5O&_nc_oc=Adn_Kdo6TKSERVp6Is4W0v2V9nM5hZ8mCgpheGHkmGf98RCom-ORgbxyVfdw5wjS8g8&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fccu3-1.fna&_nc_gid=TMPDs74YETiRjeHB4phbjQ&_nc_ss=8&oh=00_Afx0DI7bYlXC1aJ5TlUS9SgqwxwwGwDH2Ct2clzWk7YJkg&oe=69B840AA'">
+                    onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/3/32/Wikipedia_space_ibiza%2803%29.jpg'">
                 <div class="gallery-overlay">
                     <div class="overlay-content">
                         <h4>👥 Victory Moments</h4>
@@ -264,11 +264,12 @@ get_header();
 
         <!-- Call to Action -->
         <div class="gallery-cta">
-            <h2 class="cta-title">Ready to Experience the Action?</h2>
-            <p class="cta-text">Book your slot and enjoy the ultimate sports gaming experience with friends and family.
+            <h2 class="cta-title">Ready to Play the Knockout Way?</h2>
+            <p class="cta-text">Bring your squad, book your slot, and experience Kolkata’s most exciting sports gaming
+                destination.
             </p>
             <a href="<?php echo home_url('/reservation'); ?>" class="btn-neon pink pulse-animation">
-                🎮 BOOK YOUR GAME NOW
+                🎮RESERVE YOUR GAME
             </a>
         </div>
     </div>

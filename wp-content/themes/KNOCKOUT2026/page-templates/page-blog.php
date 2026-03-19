@@ -29,23 +29,24 @@ get_header(); ?>
             <?php
             $paged = max(1, (int) get_query_var('paged'));
             $q = new WP_Query(array(
-                'post_type'      => 'post',
-                'post_status'    => 'publish',
+                'post_type' => 'post',
+                'post_status' => 'publish',
                 'posts_per_page' => 9,
-                'paged'          => $paged,
+                'paged' => $paged,
                 'ignore_sticky_posts' => true,
             ));
             ?>
 
-            <?php if ($q->have_posts()) : ?>
+            <?php if ($q->have_posts()): ?>
                 <div class="blog-grid">
-                    <?php while ($q->have_posts()) : $q->the_post(); ?>
+                    <?php while ($q->have_posts()):
+                        $q->the_post(); ?>
                         <article <?php post_class('blog-card glass-card'); ?>>
                             <a class="blog-card-link" href="<?php the_permalink(); ?>">
                                 <div class="blog-thumb">
-                                    <?php if (has_post_thumbnail()) : ?>
+                                    <?php if (has_post_thumbnail()): ?>
                                         <?php the_post_thumbnail('large'); ?>
-                                    <?php else : ?>
+                                    <?php else: ?>
                                         <div class="blog-thumb-placeholder"></div>
                                     <?php endif; ?>
                                 </div>
@@ -67,12 +68,12 @@ get_header(); ?>
                 <div class="blog-pagination glass-panel">
                     <?php
                     echo paginate_links(array(
-                        'total'   => (int) $q->max_num_pages,
+                        'total' => (int) $q->max_num_pages,
                         'current' => $paged,
                     ));
                     ?>
                 </div>
-            <?php else : ?>
+            <?php else: ?>
                 <div class="glass-panel page-intro">
                     <p>No posts yet. Add your first post from the WordPress dashboard.</p>
                 </div>
@@ -84,4 +85,3 @@ get_header(); ?>
 </main>
 
 <?php get_footer(); ?>
-

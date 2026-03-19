@@ -64,9 +64,9 @@ get_header();
 
         <!-- RIGHT SIDE IMAGE - Full height -->
         <div class="hero-side-image hero-side-right">
-            <img src="https://static.vecteezy.com/system/resources/thumbnails/068/066/997/small/a-cheerful-asian-woman-in-a-white-shirt-presents-with-open-palms-isolated-on-transparent-background-png.png"
+            <img src="https://png.pngtree.com/png-vector/20241030/ourmid/pngtree-a-photo-of-friendly-handsome-man-with-dark-hair-and-beard-png-image_14179710.png"
                 alt="Bowling Lanes" class="side-img" loading="lazy">
-            <div class="side-image-overlay"></div>
+            <!-- <div class="side-image-overlay"></div> -->
         </div>
 
     </div>
@@ -91,9 +91,9 @@ get_header();
                 </div>
                 <h3>📍 Visit Us</h3>
                 <p class="card-address">
-                    Near RDB Cinemas, Salt Lake<br>
-                    Sector 5, Kolkata<br>
-                    West Bengal 700135
+                    Tower 2, SRIJAN CORPORATE PARK,<br>
+                    GP 2, GP Block, Sector V, Bidhannagar,<br>
+                    Kolkata, West Bengal 700091
                 </p>
                 <a href="https://maps.app.goo.gl/Ub8dW7vTtQfEDYf37" target="_blank" rel="noopener" class="card-btn">
                     <span class="btn-icon">🗺️</span> Get Directions

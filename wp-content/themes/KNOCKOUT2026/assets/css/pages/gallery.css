@@ -1,5 +1,6 @@
 /* ===== GALLERY PAGE STYLES ===== */
 /* All styles scoped to .page-template-page-gallery */
+@import url("https://db.onlinewebfonts.com/c/7736576106700fa2774f04bf3e04ebbb?family=Alphacorsa+Personal+Use");
 
 .page-template-page-gallery {
     --bg-dark: #0A0A0F;
@@ -10,7 +11,7 @@
     --accent-glow: #00ff37;
     --text-light: #ffffff;
     --text-dim: rgba(255, 255, 255, 0.7);
-    --font-display: 'Orbitron', sans-serif;
+    --font-alphacorsa: 'Alphacorsa Personal Use', cursive;
     --font-body: 'Rajdhani', sans-serif;
 
     background: var(--bg-dark);
@@ -61,7 +62,7 @@
 }
 
 .page-template-page-gallery .gallery-title {
-    font-family: var(--font-display);
+    font-family: var(--font-alphacorsa);
     font-size: clamp(2.5rem, 6vw, 4rem);
     font-weight: 900;
     color: var(--neon-blue);
@@ -329,7 +330,7 @@
 }
 
 .page-template-page-gallery .overlay-content h4 {
-    font-family: var(--font-display);
+    font-family: var(--font-alphacorsa);
     font-size: 1.3rem;
     color: var(--neon-blue);
     margin-bottom: 5px;
@@ -395,7 +396,7 @@
 }
 
 .page-template-page-gallery .cta-title {
-    font-family: var(--font-display);
+    font-family: var(--font-alphacorsa);
     font-size: clamp(2rem, 5vw, 3rem);
     color: #fff;
     margin-bottom: 20px;
@@ -418,7 +419,7 @@
     position: relative;
     display: inline-block;
     padding: 18px 50px;
-    font-family: var(--font-display);
+    font-family: var(--font-alphacorsa);
     font-size: 1.2rem;
     font-weight: 700;
     text-transform: uppercase;

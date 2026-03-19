@@ -74,6 +74,14 @@ function knockout_premium_scripts()
         $theme_version
     );
 
+    // Header Styles
+    wp_enqueue_style(
+        'knockout-header',
+        get_template_directory_uri() . '/assets/css/components/header.css',
+        array('knockout-style'),
+        $theme_version
+    );
+
     // Responsive overrides
     wp_enqueue_style(
         'knockout-responsive',
@@ -90,7 +98,8 @@ function knockout_premium_scripts()
         is_page_template('page-templates/page-events.php') ||
         is_page_template('page-templates/page-gallery.php') ||
         is_page_template('page-templates/page-contact.php') ||
-        is_page_template('page-templates/page-blog.php');
+        is_page_template('page-templates/page-blog.php') ||
+        is_single();
 
     if ($is_knockout_page_template) {
         wp_enqueue_style('knockout-page-base', get_template_directory_uri() . '/assets/css/pages/page-base.css', array('knockout-style'), $theme_version);
@@ -122,7 +131,7 @@ function knockout_premium_scripts()
     if (is_page_template('page-templates/page-contact.php')) {
         wp_enqueue_style('knockout-page-contact', get_template_directory_uri() . '/assets/css/pages/contact.css', array('knockout-style'), $theme_version);
     }
-    if (is_page_template('page-templates/page-blog.php')) {
+    if (is_page_template('page-templates/page-blog.php') || is_single()) {
         wp_enqueue_style('knockout-page-blog', get_template_directory_uri() . '/assets/css/pages/blog.css', array('knockout-style'), $theme_version);
     }
 

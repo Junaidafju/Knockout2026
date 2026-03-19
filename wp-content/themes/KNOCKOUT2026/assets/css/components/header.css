@@ -1,0 +1,311 @@
+/* ========== HEADER ========== */
+.site-header {
+    position: fixed;
+    top: 20px;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 0 30px;
+}
+
+/* Mobile menu: never show on desktop by default */
+.mobile-menu-panel {
+    display: none;
+}
+
+.mobile-toggle {
+    display: none;
+}
+
+.neon-toggle {
+    width: 44px;
+    height: 44px;
+    border-radius: 14px;
+    border: 1px solid rgba(176, 209, 54, 0.25);
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    cursor: pointer;
+    position: relative;
+    padding: 10px;
+}
+
+.neon-toggle span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: var(--white);
+    border-radius: 2px;
+    transition: var(--transition);
+}
+
+.neon-toggle span+span {
+    margin-top: 6px;
+}
+
+.neon-toggle.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.neon-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.neon-toggle.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Panel layout (only displayed on mobile via responsive rules) */
+.site-header.menu-open .mobile-menu-panel {
+    display: block;
+}
+
+.mobile-menu-panel {
+    max-width: 1400px;
+    margin: 12px auto 0;
+    padding: 16px 18px;
+    background: rgba(0, 0, 0, 0.82);
+    border: 1px solid rgba(176, 209, 54, 0.18);
+}
+
+.mobile-nav {
+    list-style: none;
+    display: grid;
+    gap: 10px;
+    padding: 10px 6px;
+}
+
+.mobile-nav a {
+    display: block;
+    padding: 12px 14px;
+    border-radius: 14px;
+    text-decoration: none;
+    color: var(--white);
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.mobile-nav a:hover {
+    border-color: rgba(176, 209, 54, 0.4);
+    box-shadow: 0 0 20px rgba(176, 209, 54, 0.15);
+}
+
+.header-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(176, 209, 54, 0.2);
+    border-radius: 60px;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Logo */
+.neon-logo {
+    font-family: var(--font-secondary);
+    font-size: 30px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.logo-icon {
+    width: 150px;
+    height: auto;
+}
+
+.logo-knock {
+    background: linear-gradient(135deg, var(--gradient-1), var(--gradient-2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.logo-out {
+    background: linear-gradient(135deg, var(--gradient-1), var(--gradient-2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Navigation */
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 5px;
+}
+
+.nav-menu li a {
+    display: block;
+    padding: 12px 20px;
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 40px;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-menu li a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: linear-gradient(135deg, var(--gradient-1), var(--gradient-2));
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+    z-index: -1;
+    opacity: 0.1;
+}
+
+.nav-menu li a:hover::before {
+    width: 200px;
+    height: 200px;
+}
+
+.nav-menu li a:hover,
+.nav-menu .current-menu-item a {
+    background: linear-gradient(135deg, var(--gradient-1), var(--gradient-2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Neon Buttons (legacy from pill buttons, keeping for safety) */
+.neon-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.whatsapp-btn {
+    background: rgba(37, 211, 102, 0.1);
+    border: 1px solid #25D366;
+    color: #25D366;
+}
+
+.call-btn {
+    background: rgba(176, 209, 54, 0.1);
+    border: 1px solid var(--neon);
+    color: var(--neon);
+}
+
+.neon-btn .neon-glow {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.neon-btn:hover .neon-glow {
+    left: 100%;
+}
+
+.neon-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px currentColor;
+}
+
+/* ========== HEADER ACTION BUTTONS ========== */
+.header-actions {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.header-action-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    padding: 0 20px;
+    gap: 10px;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.header-action-btn .btn-text {
+    font-family: var(--font-primary, 'Roboto', sans-serif);
+    font-weight: 600;
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.header-action-btn img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.header-action-btn:hover img {
+    transform: rotateY(360deg) scale(1.1);
+}
+
+.btn-whatsapp {
+    background: rgba(37, 211, 102, 0.15);
+    border: 1px solid #25D366;
+    box-shadow: 0 0 10px rgba(37, 211, 102, 0.3);
+}
+
+.btn-whatsapp:hover {
+    background: rgba(37, 211, 102, 0.3);
+    border-color: #25D366;
+    box-shadow: 0 0 20px rgba(37, 211, 102, 0.6);
+    transform: translateY(-2px);
+}
+
+.btn-call {
+    background: rgba(176, 209, 54, 0.15);
+    border: 1px solid #b0d136;
+    box-shadow: 0 0 10px rgba(176, 209, 54, 0.3);
+}
+
+.btn-call:hover {
+    background: rgba(176, 209, 54, 0.3);
+    border-color: #b0d136;
+    box-shadow: 0 0 20px rgba(176, 209, 54, 0.6);
+    transform: translateY(-2px);
+}
+
+/* ========== RESPONSIVE HEADER ========== */
+@media (max-width: 992px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .mobile-toggle {
+        display: block !important;
+    }
+}
