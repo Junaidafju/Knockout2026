@@ -16,7 +16,7 @@
                 <div class="social-links">
                     <a href="#" class="social-link">FB</a>
                     <a href="#" class="social-link">IG</a>
-                    <a href="#" class="social-link">TW</a>
+                    <a href="#" class="social-link">LI</a>
                     <a href="#" class="social-link">YT</a>
                 </div>
             </div>
