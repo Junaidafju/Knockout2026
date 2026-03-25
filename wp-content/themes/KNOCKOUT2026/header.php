@@ -51,7 +51,7 @@
                 </nav>
 
                 <!-- Action Buttons with Neon -->
-                <div class="header-actions" style="display: flex; gap: 15px; align-items: center;">
+                <div class="header-actions">
                     <a href="https://wa.me/919876543210" aria-label="WhatsApp" class="header-action-btn btn-whatsapp">
                         <img src="https://static.vecteezy.com/system/resources/previews/021/495/946/non_2x/whatsapp-logo-icon-free-png.png"
                             alt="WhatsApp">

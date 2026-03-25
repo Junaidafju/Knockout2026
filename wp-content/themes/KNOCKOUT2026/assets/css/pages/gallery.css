@@ -522,8 +522,20 @@
 }
 
 @media (max-width: 768px) {
+    .page-template-page-gallery .gallery-item {
+        aspect-ratio: auto !important;
+        height: 250px !important;
+    }
+
+    .page-template-page-gallery .gallery-cta {
+        margin-top: 80px;
+        position: relative;
+        z-index: 10;
+        clear: both;
+    }
+
     .page-template-page-gallery .gallery-container {
-        padding: 60px 15px;
+        padding: 130px 15px 60px;
     }
 
     .page-template-page-gallery .gallery-filters {

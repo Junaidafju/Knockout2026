@@ -2302,22 +2302,46 @@
    ============================================ */
 
 @media (max-width: 1024px) {
-    .featured-container {
-        grid-template-columns: 1fr;
-        gap: 60px;
+    .activities-page .featured-container {
+        display: flex !important;
+        flex-direction: column;
+        gap: 30px;
         text-align: center;
     }
 
-    .featured-description {
+    .activities-page .featured-content {
+        display: contents;
+        /* Allows children to participate in the flex layout of .featured-container */
+    }
+
+    .activities-page .featured-header {
+        order: 1;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .activities-page .featured-media {
+        order: 2;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .activities-page .featured-description {
+        order: 3;
         max-width: 100%;
+        margin-bottom: 30px;
     }
 
-    .featured-stats {
+    .activities-page .featured-stats {
+        order: 4;
         justify-content: center;
+        margin-bottom: 30px;
     }
 
-    .featured-actions {
+    .activities-page .featured-actions {
+        order: 5;
         justify-content: center;
+        width: 100%;
     }
 
     .media-frame img {
@@ -2350,15 +2374,31 @@
         padding: 0 20px;
     }
 
-    .featured-stats {
-        flex-direction: column;
-        gap: 25px;
-        padding: 25px;
+    .activities-page .featured-stats {
+        flex-direction: row;
+        gap: 10px;
+        padding: 20px 10px;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        width: 100%;
     }
 
-    .stat-divider {
-        width: 50px;
-        height: 1px;
+    .activities-page .stat-divider {
+        width: 1px;
+        height: 40px;
+        margin: auto 0;
+    }
+
+    .activities-page .stat-item {
+        flex: 1;
+    }
+
+    .activities-page .stat-value {
+        font-size: 1.5rem;
+    }
+
+    .activities-page .stat-label {
+        font-size: 0.75rem;
     }
 
     .featured-actions {
@@ -2409,8 +2449,8 @@
         font-size: 2.5rem;
     }
 
-    .stat-value {
-        font-size: 2rem;
+    .activities-page .stat-value {
+        font-size: 1.2rem;
     }
 
     .metric-number {
