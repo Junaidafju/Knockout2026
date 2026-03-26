@@ -255,11 +255,68 @@ get_header();
             </div>
 
             <div class="map-container">
-                <iframe class="map-frame"
-                    src="https://maps.google.com/maps?q=Near%20RDB%20Cinemas%2C%20Salt%20Lake%2C%20Sector%205%2C%20Kolkata%2C%20West%20Bengal%20700135&hl=en&z=15&output=embed"
-                    loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen>
-                </iframe>
-                <div class="map-overlay"></div>
+                <!-- Leaflet Map -->
+                <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+                <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+                <div id="leaflet-map" class="map-frame" style="width: 100%; border: none;"></div>
+
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        // Custom Icon Class
+                        var knockoutIcon = L.divIcon({
+                            className: 'custom-marker',
+                            html: `
+                            <div class="marker-container">
+                                <div class="marker-pulse"></div>
+                                <div class="marker-icon">🎳</div>
+                                <div class="marker-text">The Knockout</div>
+                            </div>
+                        `,
+                            iconSize: [60, 80],
+                            iconAnchor: [30, 80],
+                            popupAnchor: [0, -40]
+                        });
+
+                        // Initialize Map
+                        var map = L.map('leaflet-map', {
+                            scrollWheelZoom: false // disable scroll zoom to prevent hijacking page scroll
+                        }).setView([22.5687, 88.4347], 11);
+
+                        // Add Dark Tile Layer
+                        L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; CartoDB',
+                            subdomains: 'abcd',
+                            minZoom: 0,
+                            maxZoom: 20
+                        }).addTo(map);
+
+                        // Add Custom Marker
+                        var marker = L.marker([22.568858, 88.434384], { icon: knockoutIcon }).addTo(map);
+
+                        // Add Popup
+                        marker.bindPopup(`
+                        <div style="text-align: center; font-family: 'Barlow Condensed', var(--font-primary), sans-serif; padding: 0.5rem;">
+                            <h3 style="color: #b0d136; margin: 0 0 5px; font-weight: bold; letter-spacing: 1px;">KNOCKOUT</h3>
+                            <p style="margin: 0 0 10px; color: #fff; font-size: 0.9rem;">Salt Lake Sector V, Kolkata<br>Open 11am - 1am</p>
+                            <a href="https://maps.app.goo.gl/jbSsW8vK6gv2YnsbA" target="_blank" style="color: #FFD700; text-decoration: none; font-weight: bold;">Get Directions →</a>
+                        </div>
+                    `);
+
+                        // Style the popup container and map tiles automatically
+                        var style = document.createElement('style');
+                        style.innerHTML = `
+                        .leaflet-popup-content-wrapper { background: #0a0a0f !important; border: 1px solid rgba(176, 209, 54, 0.3) !important; border-radius: 12px !important; }
+                        .leaflet-popup-tip { background: #0a0a0f !important; }
+                        .leaflet-container a.leaflet-popup-close-button { color: #b0d136 !important; }
+                        /* Tint Map and Preserve Street Lines */
+                        .leaflet-tile-pane {
+                            filter: brightness(1.5) sepia(1) hue-rotate(35deg) saturate(5) contrast(1.2);
+                        }
+                    `;
+                        document.head.appendChild(style);
+                    });
+                </script>
             </div>
 
             <!-- Social Links -->
@@ -273,7 +330,7 @@ get_header();
                     class="social-btn facebook">
                     <span aria-hidden="true">📘</span> Facebook
                 </a>
-                <a href="https://g.page/knockoutkolkata/review" target="_blank" rel="noopener"
+                <a href="https://g.page/r/CRG4vTGoiH6qEBM/review" target="_blank" rel="noopener"
                     class="social-btn google">
                     <span aria-hidden="true">⭐</span> Google Reviews
                 </a>

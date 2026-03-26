@@ -31,9 +31,8 @@
    ========================================= */
 .contact-hero {
     position: relative;
-    height: 50vh;
-    min-height: 400px;
-    max-height: 700px;
+    height: auto;
+    min-height: 60vh;
     overflow: hidden;
     background: var(--knockout-darker);
 }
@@ -117,7 +116,7 @@
     grid-column: 2;
     text-align: center;
     color: #fff;
-    padding: 2rem;
+    padding: 8rem 2rem 2rem 2rem;
     z-index: 4;
     position: relative;
 }
@@ -138,46 +137,36 @@
 @media (max-width: 768px) {
     .contact-hero {
         height: auto;
-        min-height: 500px;
+        min-height: 400px;
     }
 
     .contact-hero-inner {
         grid-template-columns: 1fr;
-        grid-template-rows: auto 1fr auto;
+        grid-template-rows: 1fr;
         height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
-    .hero-side-left {
-        grid-row: 1;
-        height: 150px;
+    .hero-side-left,
+    .hero-side-right {
+        display: none !important;
     }
 
     .contact-hero-content {
-        grid-row: 2;
-        grid-column: 1;
-        padding: 2rem 1.5rem;
-    }
-
-    .hero-side-right {
-        grid-row: 3;
-        height: 150px;
-    }
-
-    .side-img {
-        object-position: center 20%;
+        padding: 8rem 1.5rem 3rem 1.5rem;
     }
 }
 
 /* Small mobile */
 @media (max-width: 480px) {
-
-    .hero-side-left,
-    .hero-side-right {
-        height: 120px;
+    .contact-hero {
+        min-height: 350px;
     }
 
     .contact-hero-content {
-        padding: 1.5rem 1rem;
+        padding: 7rem 1rem 2rem 1rem;
     }
 }
 
@@ -220,7 +209,7 @@
     z-index: 3;
     text-align: center;
     color: #fff;
-    padding: 2rem;
+    padding: 8rem 2rem 2rem 2rem;
     max-width: 800px;
 }
 
@@ -344,10 +333,7 @@
 
 /* Scroll Indicator */
 .hero-scroll {
-    position: absolute;
-    bottom: -0.5rem;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -395,9 +381,8 @@
 
 .contact-hero {
     position: relative;
-    height: 50vh;
-    min-height: 400px;
-    max-height: 700px;
+    height: auto;
+    min-height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -426,7 +411,7 @@
    ========================================= */
 .contact-info-section {
     padding: 4rem 0;
-    background: var(--knockout-dark);
+    /* background: var(--knockout-dark); */
     position: relative;
 }
 
@@ -611,7 +596,7 @@
    ========================================= */
 .contact-form-section {
     padding: 5rem 0;
-    background: linear-gradient(180deg, var(--knockout-dark) 0%, var(--knockout-darker) 100%);
+    /* background: linear-gradient(180deg, var(--knockout-dark) 0%, var(--knockout-darker) 100%); */
 }
 
 .form-wrapper {
@@ -626,7 +611,7 @@
 }
 
 .form-header h2 {
-    font-family: var(--font-display);
+    font-family: var(--font-secondary);
     font-size: clamp(2rem, 5vw, 2.8rem);
     font-weight: 900;
     color: #fff;
@@ -918,13 +903,19 @@
 }
 
 .map-header h3 {
-    font-family: var(--font-display);
+    font-family: var(--font-secondary);
     font-size: clamp(1.5rem, 4vw, 2rem);
     font-weight: 900;
     color: #fff;
     margin: 0 0 0.5rem;
     text-transform: uppercase;
     letter-spacing: 2px;
+    display: inline-block;
+    background: linear-gradient(135deg, #fff 0%, var(--knockout-green) 50%, #fff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: textGlow 3s ease-in-out infinite alternate;
 }
 
 .map-header p {
@@ -967,8 +958,76 @@
     background: radial-gradient(ellipse at center, transparent 0%, rgba(10, 10, 15, 0.1) 100%);
 }
 
+/* Custom Map Marker */
+.custom-marker {
+    background: transparent;
+    border: none;
+}
+
+.marker-container {
+    position: relative;
+    width: 60px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.marker-pulse {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: rgba(176, 209, 54, 0.4);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+    top: 0;
+    left: 5px;
+}
+
+.marker-icon {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #B0D136, #00D4FF);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    box-shadow: 0 0 20px rgba(176, 209, 54, 0.5);
+    border: 2px solid #fff;
+    z-index: 2;
+}
+
+.marker-text {
+    position: relative;
+    background: rgba(0, 0, 0, 0.8);
+    color: #B0D136;
+    padding: 4px 8px;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin-top: 5px;
+    white-space: nowrap;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(176, 209, 54, 0.5);
+    z-index: 2;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.8);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
 /* Social Links */
-.social-links {
+.contact-map-section .social-links {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -978,7 +1037,7 @@
     border-top: 1px solid rgba(176, 209, 54, 0.2);
 }
 
-.social-links>span {
+.contact-map-section .social-links>span {
     color: rgba(255, 255, 255, 0.7);
     font-size: 0.95rem;
     margin-right: 0.5rem;
@@ -1061,13 +1120,16 @@
     }
 
     .hero-ctas {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        gap: 0.5rem;
     }
 
     .btn-glow {
-        width: 100%;
-        max-width: 280px;
+        max-width: none;
+        width: auto;
+        padding: 0.7rem 1.2rem;
+        font-size: 0.85rem;
         justify-content: center;
     }
 
@@ -1108,13 +1170,18 @@
         height: 300px;
     }
 
-    .social-links {
-        flex-direction: column;
+    .contact-map-section .social-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 0.8rem;
     }
 
-    .social-links>span {
+    .contact-map-section .social-links>span {
         margin-right: 0;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0.5rem;
     }
 }
 

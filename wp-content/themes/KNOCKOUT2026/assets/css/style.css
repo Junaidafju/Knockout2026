@@ -772,7 +772,7 @@ h6 {
 
 /* Title */
 .services-section .services-title {
-    font-family: 'Orbitron', 'Rajdhani', 'Arial Black', sans-serif;
+    font-family: var(--font-secondary);
     font-size: clamp(2.2rem, 6vw, 5rem);
     font-weight: 900;
     line-height: 1.2;
