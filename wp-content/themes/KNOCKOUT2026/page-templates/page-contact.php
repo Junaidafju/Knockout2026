@@ -15,7 +15,7 @@ get_header();
 <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
 
 <!-- =========================================
-     CONTACT PAGE HERO (50% Viewport)
+     CONTACT PAGE HERO view  (50% Viewports)
      ========================================= -->
 <section class="contact-hero">
     <div class="contact-hero-bg">
