@@ -35,39 +35,6 @@
    inside your existing wp_enqueue_scripts callback
 ──────────────────────────────────────────────────
 
-add_action( 'wp_enqueue_scripts', 'knockout_enqueue_blog_assets' );
-function knockout_enqueue_blog_assets() {
-    $ver = wp_get_theme()->get('Version');
-    $uri = get_template_directory_uri();
 
-    // Load on blog index, single posts, category / tag archives
-    if ( is_home() || is_singular('post') || is_category() || is_tag() || is_archive() ) {
-
-        // Google Fonts (if not already global)
-        wp_enqueue_style(
-            'knockout-google-fonts',
-            'https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700&family=Roboto:wght@400;700&display=swap',
-            [],
-            null
-        );
-
-        // Blog CSS
-        wp_enqueue_style(
-            'knockout-blog',
-            $uri . '/assets/css/blog.css',
-            ['knockout-google-fonts'],
-            $ver
-        );
-
-        // Blog scroll-reveal JS (deferred, footer)
-        wp_enqueue_script(
-            'knockout-blog-reveal',
-            $uri . '/assets/js/blog-reveal.js',
-            [],
-            $ver,
-            true  // load in footer
-        );
-    }
-}
 
 ─────────────────────────────────────────────────── */
