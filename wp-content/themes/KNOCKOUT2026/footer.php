@@ -49,14 +49,14 @@
             <div class="footer-links">
                 <h3><span class="gradient-text">VISIT US</span></h3>
                 <ul>
-                    <li>🚩 Tower 2, SRIJAN CORPORATE PARK, GP 2, GP Block, Sector V, Bidhannagar, Kolkata, West Bengal
+                    <li>🚩 SRIJAN CORPORATE PARK, GP 2, GP Block, Sector V, Bidhannagar, Kolkata, West Bengal
                         700091</li>
                     <li>📲+91 98310 40034</li>
-                    <li>📨knockoutkolkata@gmail.com</li>
+                    <li>📨info@theknockout.in</li>
                 </ul>
                 <div class="hours">
                     <span class="gradient-text">OPEN DAILY</span>
-                    <p>Mon-Thu: 11am - 1am<br>Fri-Sun: 11am - 3am</p>
+                    <p>12PM - 12AM</p>
                 </div>
             </div>
         </div>
