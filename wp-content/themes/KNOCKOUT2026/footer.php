@@ -38,9 +38,9 @@
                 <h3><span class="gradient-text">EXPERIENCES</span></h3>
                 <ul>
                     <li><a href="/bowling">Bowling</a></li>
-                    <li><a href="/arcade">VR Arcade</a></li>
+                    <li><a href="/game-nights">Game Nights</a></li>
                     <li><a href="/sports">Live Sports</a></li>
-                    <li><a href="/hookah">Hookah Lounge</a></li>
+                    <li><a href="/bar">Bar Lounge</a></li>
                     <li><a href="/private-events">Private Events</a></li>
                 </ul>
             </div>

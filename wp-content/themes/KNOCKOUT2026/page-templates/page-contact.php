@@ -110,13 +110,13 @@ get_header();
                 </div>
                 <h3>📞 Call Us</h3>
                 <p class="card-phone">
-                    <a href="tel:+919147763399">+91 91477 63399</a>
+                    <a href="tel:+919147763399">+91 9831040034</a>
                 </p>
                 <div class="card-hours">
                     <strong>🕐 Hours:</strong><br>
-                    Mon-Thu: 11AM - 11PM<br>
-                    Fri-Sat: 10AM - 1AM<br>
-                    Sun: 12PM - 1AM
+                    Daily<br>
+                    12PM - 12AM<br>
+
                 </div>
                 <div class="card-glow"></div>
             </div>
@@ -130,7 +130,7 @@ get_header();
                 </div>
                 <h3>✉️ Email Us</h3>
                 <p class="card-email-link">
-                    <a href="mailto:knockoutkolkata@gmail.com">knockoutkolkata@gmail.com</a>
+                    <a href="mailto:info@theknockout.in">info@theknockout.in</a>
                 </p>
                 <p class="card-note">
                     💬 We respond within 24 hours<br>
