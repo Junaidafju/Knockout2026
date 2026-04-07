@@ -1,7 +1,7 @@
 <?php
 /**
  * Template Name: Premium Bowling Page
- * Description: 6-Lane Boutique Bowling Lounge with Full-Screen Carousel
+ * Description: 6-Lane 6 Lane Bowling Lounge with Full-Screen Carousel
  */
 
 get_header();
@@ -735,8 +735,8 @@ get_header();
                 <div class="slide-content">
                     <div class="text-brush-bg"></div>
                     <div class="slide-inner">
-                        <span class="slide-eyebrow">✦ BOUTIQUE BOWLING LOUNGE</span>
-                        <h1 class="slide-title">Luxury Strikes Here: <span>Kolkata's First</span> Boutique Bowling
+                        <span class="slide-eyebrow">✦ THE KNOCKOUT BOWLING LOUNGE</span>
+                        <h1 class="slide-title">Luxury Strikes Here: <span>Kolkata's First</span> 6 Lane Bowling
                             Experience</h1>
                         <p class="slide-description">Forget the crowded arcades and sticky shoes. Welcome to Knockout,
                             an intimate 6-lane sanctuary designed for those who play with style.</p>
@@ -760,7 +760,7 @@ get_header();
                         <span class="slide-eyebrow">✦ OWN THE ALLEY</span>
                         <h1 class="slide-title">Corporate & <span>Private Events</span></h1>
                         <p class="slide-description">Host tournaments for up to 40 guests with complete privacy. Perfect
-                            for team building, boutique birthdays, and exclusive celebrations.</p>
+                            for team building, 6 Lane birthdays, and exclusive celebrations.</p>
                         <div class="slide-buttons">
                             <a href="#corporate" class="bowling-btn bowling-btn-primary">📅 PLAN YOUR EVENT</a>
                             <a href="#packages" class="bowling-btn bowling-btn-secondary">🎯 VIEW PACKAGES</a>
@@ -862,7 +862,7 @@ get_header();
                     <ul class="features-list">
                         <li><span>🏢</span> Corporate Team Building — Host tournaments for up to 40 guests with complete
                             privacy.</li>
-                        <li><span>🎂</span> Boutique Birthdays — A sophisticated celebration space without the chaos of
+                        <li><span>🎂</span> 6 Lane Birthdays — A sophisticated celebration space without the chaos of
                             a mall food court.</li>
                         <li><span>🎧</span> Private DJ booth access & customizable digital scoreboards with your company
                             logo.</li>
