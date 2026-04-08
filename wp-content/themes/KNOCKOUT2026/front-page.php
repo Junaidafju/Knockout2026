@@ -89,7 +89,7 @@ get_header(); ?>
                             <span class="stat-label">BOWLING ALLEY</span>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-number gradient-text">50+</span>
+                            <span class="stat-number gradient-text">15+</span>
                             <span class="stat-label">GAMES</span>
                         </div>
                         <div class="stat-item">
@@ -100,7 +100,7 @@ get_header(); ?>
 
                     <div class="hero-cta animate-slide-up delay-3">
                         <a href="#experience" class="neon-cta primary-cta">
-                            <span>EXPLORE THE <span class="gradient-text">EXPERIENCE</span></span>
+                            <span>EXPLORE THE EXPERIENCE</span>
                             <span class="cta-glow"></span>
                         </a>
                         <a href="/reservation" class="neon-cta secondary-cta">
@@ -274,7 +274,7 @@ get_header(); ?>
                     <!-- 4. Elite Bowling Alley -->
                     <div class="service-card">
                         <div class="card-image">
-                            <img src="https://knockout-2026.test/wp-content/themes/KNOCKOUT2026/assets/images/hero-image.jpg"
+                            <img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAweqCNRC2YWZpGwJh49rmG4CNe3eNckH_EdHl0E-yw0dLiVUi-VeMfxjxtGTVwfhqPMQkFQSBUnxVI7q28TZuM4aPuYc2CO2mA-cHkve09KDggTezoFcfjoI-EJ-iFZRxXeITeVoxyggkta7x=s680-w680-h510-rw"
                                 alt="Elite Bowling Alley">
                             <div class="card-overlay">
                                 <div class="card-icon"><i class="fas fa-bowling-ball"></i></div>
