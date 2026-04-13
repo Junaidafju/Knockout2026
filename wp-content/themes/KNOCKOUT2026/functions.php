@@ -1,6 +1,6 @@
 <?php
 /**
- * KnockOut Premium Theme Functions
+ * Template Name: Live Sports Screening
  */
 
 // Theme Setup
@@ -279,6 +279,19 @@ function knockout_run_initial_setup()
 }
 add_action('admin_init', 'knockout_run_initial_setup');
 
+
+// ===== ADD CUSTOM FONTS =====
+function knockout_add_custom_fonts()
+{
+    ?>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600;700&family=Bebas+Neue&display=swap"
+        rel="stylesheet">
+    <?php
+}
+add_action('wp_head', 'knockout_add_custom_fonts');
 /**
  * Force `front-page.php` for the site root even when "Your homepage displays"
  * is set to "Your latest posts" (is_home + is_front_page).
