@@ -39,7 +39,7 @@
                 <ul>
                     <li><a href="/bowling">Bowling</a></li>
                     <li><a href="/game-nights">Game Nights</a></li>
-                    <li><a href="/sports">Live Sports</a></li>
+                    <li><a href="/live-sports">Live Sports</a></li>
                     <li><a href="/bar">Bar Lounge</a></li>
                     <li><a href="/private-events">Private Events</a></li>
                 </ul>

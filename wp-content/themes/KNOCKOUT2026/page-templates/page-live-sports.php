@@ -609,7 +609,7 @@ get_header();
         inset: 0;
         background:
             linear-gradient(180deg, rgba(10, 10, 15, 0.6) 0%, rgba(10, 10, 15, 0.3) 50%, rgba(10, 10, 15, 0.8) 100%),
-            url('https://images.unsplash.com/photo-1522778119026-d647f0565c6a?w=1920&q=85') center/cover no-repeat;
+            url('https://i.makeagif.com/media/1-17-2017/dzYV1J.gif') center/cover no-repeat;
         background-attachment: fixed;
         filter: brightness(0.6) saturate(1.2);
     }
@@ -1011,7 +1011,7 @@ get_header();
         inset: 0;
         background:
             linear-gradient(180deg, rgba(10, 10, 15, 0.8) 0%, rgba(10, 10, 15, 0.6) 50%, rgba(10, 10, 15, 0.9) 100%),
-            url('https://images.unsplash.com/photo-1577223625816-7546f13df25d?w=1920&q=85') center/cover no-repeat;
+            url('https://i.pinimg.com/originals/2a/57/8e/2a578eaf560cd2b82f89d01e4e2e2475.gif') center/cover no-repeat;
         filter: brightness(0.5) saturate(1.2);
     }
 
@@ -1026,7 +1026,7 @@ get_header();
         z-index: 10;
         text-align: center;
         padding: var(--space-xl);
-        max-width: 900px;
+        max-width: 1400px;
     }
 
     .kc-cta__title {
@@ -1532,8 +1532,8 @@ get_header();
                         <span class="kc-faq__icon">+</span>
                     </button>
                     <div class="kc-faq__answer">
-                        <p class="kc-faq__text">We open two hours prior to match commencement and remain open until
-                            thirty minutes after conclusion. For afternoon fixtures (3:30 PM), doors open at 1:30 PM.
+                        <p class="kc-faq__text">We open daily 12PM - 12AM. For premium events including IPL Playoffs,
+                            ISL Finals, or Champions League Finals, minimum spend requirements may apply.
                         </p>
                     </div>
                 </div>
@@ -1581,13 +1581,14 @@ get_header();
          9. FINAL CTA SECTION
     ═══════════════════════════════════════════════════════════ -->
     <section class="kc-cta">
-        <div class="kc-cta__bg"></div>
+        <div class="kc-cta__bg">
+        </div>
         <div class="kc-cta__overlay"></div>
 
         <div class="kc-cta__content">
             <h2 class="kc-cta__title">
                 Ready to Experience<br>
-                <em>The Ultimate Screening?</em>
+                <em>The Ultimate Fun?</em>
             </h2>
             <p class="kc-cta__text">
                 Don't miss a moment of the action. Secure your seat now and join Kolkata's most passionate fans.
@@ -1598,7 +1599,7 @@ get_header();
                 <span class="kc-cta__feature">✓ Valet Parking</span>
                 <span class="kc-cta__feature">✓ Premium Groups</span>
             </div>
-            <a href="tel:+919831040034" class="kc-cta__phone">📞 +91 98310 40034</a>
+            <a href="tel:+919831040034" class="kc-cta__phone">🤙 +91 98310 40034</a>
             <div class="kc-cta__buttons">
                 <a href="tel:+919831040034" class="kc-btn kc-btn--solid kc-btn--large">
                     <span>Reserve Now</span>
