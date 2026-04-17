@@ -239,6 +239,27 @@ get_header();
         max-width: 600px;
     }
 
+    /* ========== SECTION HEADER CENTER ========== */
+    .section-header-center {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .section-header-center .section-label {
+        padding-left: 0;
+    }
+
+    .section-header-center .section-label::before {
+        display: none;
+    }
+
+    .section-header-center .section-desc {
+        max-width: 800px;
+    }
+
     /* ========== BACKGROUND STRIPS ========== */
     .bg-strip {
         position: absolute;
@@ -260,34 +281,42 @@ get_header();
     /* ========== FEATURES GRID ========== */
     .features-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
         gap: 30px;
-        margin-top: 60px;
+        margin-top: 50px;
     }
 
     .feature-card {
         background: var(--bg-card);
         padding: 40px 30px;
         border: 1px solid rgba(255, 255, 255, 0.05);
+        border-radius: 12px;
         transition: all 0.3s ease;
         position: relative;
         overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        justify-content: flex-start;
     }
 
     .feature-card::before {
         content: '';
         position: absolute;
-        top: 0;
+        bottom: 0;
         left: 0;
-        width: 4px;
-        height: 100%;
+        width: 100%;
+        height: 4px;
         background: var(--green-primary);
-        transform: scaleY(0);
+        transform: scaleX(0);
         transition: transform 0.3s ease;
+        transform-origin: center;
     }
 
     .feature-card:hover::before {
-        transform: scaleY(1);
+        transform: scaleX(1);
     }
 
     .feature-card:hover {
@@ -297,21 +326,21 @@ get_header();
     }
 
     .feature-icon {
-        font-size: 2.5rem;
+        font-size: 3rem;
         margin-bottom: 20px;
-        display: block;
+        display: inline-block;
     }
 
     .feature-card h3 {
         font-size: 1.3rem;
         font-weight: 800;
-        margin-bottom: 12px;
+        margin-bottom: 15px;
         color: var(--text-white);
     }
 
     .feature-card p {
         color: var(--text-muted);
-        line-height: 1.7;
+        line-height: 1.6;
         font-size: 0.95rem;
     }
 
@@ -956,12 +985,15 @@ get_header();
             </div>
         </div>
         <div class="container">
-            <span class="section-label fade-in-section">Why Choose Us</span>
-            <h2 class="section-title fade-in-section">Why Host Your Event at <span
-                    style="color: var(--green-primary);">Knockout?</span>
-            </h2>
-            <p class="section-desc fade-in-section">Kolkata's first and only all-in-one sports entertainment destination
-            </p>
+            <div class="section-header-center">
+                <span class="section-label fade-in-section">Why Choose Us</span>
+                <h2 class="section-title fade-in-section">Why Host Your Event at <span
+                        style="color: var(--green-primary);">Knockout?</span>
+                </h2>
+                <p class="section-desc fade-in-section">Kolkata's first and only all-in-one sports entertainment
+                    destination
+                </p>
+            </div>
 
             <div class="features-grid">
                 <div class="feature-card scale-in">
@@ -1226,9 +1258,11 @@ get_header();
     <section class="ll-section" style="background: var(--bg-obsidian);">
         <div class="bg-strip">
 
-            <div class="bg-strip-overlay"
-                style="background: linear-gradient(to top, rgba(255,255,255,0.1) 0%, rgba(0,0,0,0.8) 100%), url('https://t3.ftcdn.net/jpg/19/22/04/20/360_F_1922042086_kM027lnKnBaTdYFPcPVxvuufdH9Rt7As.jpg') center/cover no-repeat; position: relative;">
+            <div class="bg-strip-overlay"><video autoplay loop muted playsinline
+                    style="object-fit: cover; width: 100%; height: 100%; display: block;"
+                    src="https://theknockout.in/wp-content/uploads/2026/04/vecteezy_neon-green-question-marks-randomly-dispersed-over-a-dark_67711737.mp4"></video>
             </div>
+
         </div>
         <div class="container">
             <span class="section-label fade-in-section">FAQ</span>
