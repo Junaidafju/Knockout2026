@@ -76,7 +76,7 @@ get_header(); ?>
                 <div class="intro-image animate-slide-left">
                     <div class="image-frame">
                         <div class="frame-glow"></div>
-                        <img src="https://www.propvestors.in/wp-content/uploads/2023/06/ps-srijan-corporate-park-project-1.webp"
+                        <img src="https://theknockout.in/wp-content/uploads/2026/04/ChatGPT-Image-Apr-18-2026-01_56_08-PM.jpg"
                             alt="KnockOut Interior">
                         <div class="experience-badge">
                             <span class="badge-number">1st</span>
@@ -97,7 +97,7 @@ get_header(); ?>
                     <div class="stat-label">Happy Customers</div>
                 </div>
                 <div class="stat-card glass-card">
-                    <div class="stat-number gradient-text">15+</div>
+                    <div class="stat-number gradient-text">10+</div>
                     <div class="stat-label">Games & Activities</div>
                 </div>
                 <div class="stat-card glass-card">
@@ -357,7 +357,7 @@ get_header(); ?>
                             <span class="tl-image__corner tl-image__corner--tr"></span>
                             <span class="tl-image__corner tl-image__corner--bl"></span>
                             <span class="tl-image__corner tl-image__corner--br"></span>
-                            <img src="https://scontent.fccu3-1.fna.fbcdn.net/v/t39.30808-6/482030756_122205144356094553_3531847920802826113_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=7b2446&_nc_ohc=ZMptTV899KAQ7kNvwHIZoVD&_nc_oc=AdkYpEWjExYJchHwU0ZofDPzNTEU1BpYTgy2KaImt8ICFBVYc9PzNVbOQObYYTW39v4&_nc_zt=23&_nc_ht=scontent.fccu3-1.fna&_nc_gid=9Et-3kM3kt4r6ZJ-d4qYdA&_nc_ss=8&oh=00_AfwNSCRuPh8gLxx0g0wowDoOuhwAT6Pi6ldTXkzOqQZ-TA&oe=69BDB522"
+                            <img src="https://w0.peakpx.com/wallpaper/635/342/HD-wallpaper-game-concepts-game-console-headphones-joystick-games-icon-color-art.jpg"
                                 alt="The Concept — KnockOut 2019" loading="lazy">
                             <div class="tl-image__overlay"></div>
                             <div class="tl-image__year-badge">2019</div>
@@ -491,7 +491,7 @@ get_header(); ?>
 
                     <div class="tl-content tl-anim tl-anim--left">
                         <span class="tl-connector" aria-hidden="true"></span>
-                        <span class="tl-content__year">2024</span>
+                        <span class="tl-content__year">2026</span>
                         <h3 class="tl-content__title">The Destination</h3>
                         <p class="tl-content__body">Located in Salt Lake Sector V, Knockout stands as Kolkata's ultimate
                             hub for gaming, dining, and celebration — and the journey has only just begun.</p>
@@ -511,10 +511,10 @@ get_header(); ?>
                             <span class="tl-image__corner tl-image__corner--tr"></span>
                             <span class="tl-image__corner tl-image__corner--bl"></span>
                             <span class="tl-image__corner tl-image__corner--br"></span>
-                            <img src="https://scontent.fccu3-1.fna.fbcdn.net/v/t39.30808-6/497844433_723799976841479_3106791887369961862_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=7b2446&_nc_ohc=c8DBKWkWxIgQ7kNvwE09krh&_nc_oc=AdkBxCfb9rsGVcNS2ckURTaqyHvi-VEUqPtI6soeQj2Vq4gEENGDtDn2cwcR8iDqFJU&_nc_zt=23&_nc_ht=scontent.fccu3-1.fna&_nc_gid=dHbOwp4uxirfIMQ_9_8-gA&_nc_ss=8&oh=00_AfzyDGVWVbxyZoRcbyuOCTQzdphwuUa1zTmEBN8Vqu-qdA&oe=69BDB8EC"
-                                alt="The Destination — KnockOut 2024" loading="lazy">
+                            <img src="https://theknockout.in/wp-content/uploads/2026/04/ChatGPT-Image-Apr-8-2026-01_33_21-PM.png"
+                                alt="The Destination — KnockOut 2026" loading="lazy">
                             <div class="tl-image__overlay"></div>
-                            <div class="tl-image__year-badge tl-image__year-badge--pink">2024</div>
+                            <div class="tl-image__year-badge tl-image__year-badge--pink">2026</div>
                         </div>
                     </div>
 

@@ -872,61 +872,43 @@ get_header();
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 30px;
-        align-items: end;
+        align-items: start;
+        padding: 20px 0 60px;
+        max-width: 900px;
+        margin: 0 auto;
     }
 
     .chef-card {
-        background: var(--bg-card);
-        backdrop-filter: blur(10px);
-        border: 1px solid var(--neon-green-border);
-        border-radius: 16px;
-        padding: 20px;
-        text-align: center;
-        transition: all 0.35s ease;
+        background: radial-gradient(circle at center, rgba(174, 208, 52, 0.4) 0%, rgba(10, 15, 10, 1) 70%);
+        border: 2px solid var(--neon-green);
+        border-radius: 20px;
         position: relative;
         overflow: hidden;
+        aspect-ratio: 3 / 4;
+        transition: all 0.35s ease;
+        box-shadow: 0 0 20px rgba(174, 208, 52, 0.15);
     }
 
-    .chef-card::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 200px;
-        height: 200px;
-        background: radial-gradient(circle, rgba(174, 208, 52, 0.15) 0%, transparent 70%);
-        pointer-events: none;
+    .chef-card:nth-child(2) {
+        transform: translateY(40px);
     }
 
     .chef-card:hover {
-        border-color: var(--neon-green);
-        box-shadow: 0 0 30px rgba(174, 208, 52, 0.15);
-        transform: translateY(-6px);
+        box-shadow: 0 0 35px rgba(174, 208, 52, 0.4);
+        transform: translateY(-5px);
+    }
+
+    .chef-card:nth-child(2):hover {
+        transform: translateY(35px);
     }
 
     .chef-img-wrap {
-        width: 160px;
-        height: 200px;
-        margin: 0 auto 16px;
-        border-radius: 12px;
-        overflow: hidden;
-        border: 2px solid var(--neon-green);
-        position: relative;
-        z-index: 1;
-    }
-
-    .chef-img-wrap::before {
-        content: '';
+        width: 100%;
+        height: 100%;
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 180px;
-        height: 180px;
-        background: radial-gradient(circle, rgba(174, 208, 52, 0.3) 0%, transparent 70%);
-        z-index: 0;
-        pointer-events: none;
+        top: 0;
+        left: 0;
+        z-index: 1;
     }
 
     .chef-img-wrap img {
@@ -934,29 +916,10 @@ get_header();
         height: 100%;
         object-fit: cover;
         transition: transform 0.5s ease;
-        position: relative;
-        z-index: 1;
     }
 
     .chef-card:hover .chef-img-wrap img {
         transform: scale(1.05);
-    }
-
-    .chef-name {
-        font-size: 1rem;
-        font-weight: 700;
-        margin-bottom: 4px;
-        color: var(--text-white);
-        position: relative;
-        z-index: 1;
-    }
-
-    .chef-role {
-        font-size: 0.8rem;
-        color: var(--neon-green);
-        font-weight: 500;
-        position: relative;
-        z-index: 1;
     }
 
     /* ========== FINAL CTA ========== */
@@ -1098,6 +1061,15 @@ get_header();
 
         .chefs-grid {
             max-width: 300px;
+            padding-bottom: 20px;
+        }
+
+        .chef-card:nth-child(2) {
+            transform: none;
+        }
+
+        .chef-card:nth-child(2):hover {
+            transform: translateY(-5px);
         }
 
         .section {
@@ -1555,33 +1527,31 @@ get_header();
 <section class="section section-chef">
     <div class="container">
         <div class="section-header fade-in">
-            <h2 class="section-title">Our Special Chef</h2>
-            <p class="section-desc">Meet the culinary masters behind your favorite meals</p>
+            <h2 class="section-title">OUR SPECIAL CHEF</h2>
+            <p class="section-desc">Pactiser Inomrat the mons of toa gusrttie pero protaems.<br>Regalancd your havior
+            </p>
         </div>
 
         <div class="chefs-grid">
             <div class="chef-card fade-in">
                 <div class="chef-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=400" alt="Chef Marcus">
+                    <img src="https://theknockout.in/wp-content/uploads/2026/04/Untitled-design-9.png"
+                        alt="Chef Marcus">
                 </div>
-                <h3 class="chef-name">Chef Marcus</h3>
-                <p class="chef-role">Head Chef</p>
             </div>
 
             <div class="chef-card fade-in">
                 <div class="chef-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=400" alt="Chef Sarah">
+                    <img src="https://theknockout.in/wp-content/uploads/2026/04/Untitled-design-11.png"
+                        alt="Chef Sarah">
                 </div>
-                <h3 class="chef-name">Chef Sarah</h3>
-                <p class="chef-role">Pastry Chef</p>
             </div>
 
             <div class="chef-card fade-in">
                 <div class="chef-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1581299894007-aaa50297cf16?w=400" alt="Chef Antonio">
+                    <img src="https://theknockout.in/wp-content/uploads/2026/04/Untitled-design-10.png"
+                        alt="Chef Antonio">
                 </div>
-                <h3 class="chef-name">Chef Antonio</h3>
-                <p class="chef-role">Sous Chef</p>
             </div>
         </div>
     </div>

@@ -203,8 +203,8 @@
 
 .whatsapp-btn {
     background: rgba(37, 211, 102, 0.1);
-    border: 1px solid #25D366;
-    color: #25D366;
+    border: 1px solid #a8d10f;
+    color: #a8d10f;
 }
 
 .call-btn {
@@ -275,7 +275,7 @@
 
 .btn-whatsapp {
     background: rgba(37, 211, 102, 0.15);
-    border: 1px solid #25D366;
+    border: 1px solid #a8d10f;
     box-shadow: 0 0 10px rgba(37, 211, 102, 0.3);
 }
 
