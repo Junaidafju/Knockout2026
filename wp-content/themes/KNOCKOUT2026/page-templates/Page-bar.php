@@ -880,7 +880,7 @@ get_header();
             <div class="cocktails-showcase">
                 <div class="cocktail-item fade-in-section">
                     <video autoplay loop muted playsinline
-                        src="https://theknockout.in/wp-content/uploads/2026/04/Happy-Republic-Day-1.mp4"></video>
+                        src="https://theknockout.in/wp-content/uploads/2026/04/Premium-Whisky.mp4"></video>
                     <div class="cocktail-overlay">
                         <h4>The Grand Slam</h4>
                         <p>Gin · Botanical · Bold</p>
@@ -888,7 +888,7 @@ get_header();
                 </div>
                 <div class="cocktail-item fade-in-section" style="transition-delay: 0.1s;">
                     <video autoplay loop muted playsinline
-                        src="https://theknockout.in/wp-content/uploads/2026/04/Happy-Republic-Day.mp4"></video>
+                        src="https://theknockout.in/wp-content/uploads/2026/04/Fire-Shots.mp4"></video>
                     <div class="cocktail-overlay">
                         <h4>The Powerplay</h4>
                         <p>Vodka · Caffeine Kick</p>
@@ -896,7 +896,7 @@ get_header();
                 </div>
                 <div class="cocktail-item fade-in-section" style="transition-delay: 0.2s;">
                     <video autoplay loop muted playsinline
-                        src="https://theknockout.in/wp-content/uploads/2026/04/Happy-Republic-Day-2.mp4"></video>
+                        src="https://theknockout.in/wp-content/uploads/2026/04/Classy-Colourfull-Cocktails.mp4"></video>
                     <div class="cocktail-overlay">
                         <h4>Virtual Sunset</h4>
                         <p>Tequila · Layered Neon</p>
@@ -904,7 +904,7 @@ get_header();
                 </div>
                 <div class="cocktail-item fade-in-section" style="transition-delay: 0.3s;">
                     <video autoplay loop muted playsinline
-                        src="https://theknockout.in/wp-content/uploads/2026/04/Happy-Republic-Day-4.mp4"></video>
+                        src="https://theknockout.in/wp-content/uploads/2026/04/BeerPouring.mp4"></video>
                     <div class="cocktail-overlay">
                         <h4>Boundary Punch</h4>
                         <p>Shareable · Fruity</p>

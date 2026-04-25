@@ -14,10 +14,14 @@
                 <p>Kolkata's premier <span class="gradient-text">sports entertainment</span> destination where luxury
                     meets the game. Experience dining, bowling, and nightlife like never before.</p>
                 <div class="social-links">
-                    <a href="#" class="social-link">FB</a>
-                    <a href="#" class="social-link">IG</a>
-                    <a href="#" class="social-link">LI</a>
-                    <a href="#" class="social-link">YT</a>
+                    <a href="https://www.facebook.com/TheKnockoutofficial" target="_blank" rel="noopener"
+                        class="social-link">FB</a>
+                    <a href="https://www.instagram.com/theknockout.co/" target="_blank" rel="noopener"
+                        class="social-link">IG</a>
+                    <a href="https://www.linkedin.com/company/theknockout" target="_blank" rel="noopener"
+                        class="social-link">LI</a>
+                    <a href="https://www.youtube.com/@theknockout-official?sub_confirmation=1" target="_blank"
+                        rel="noopener" class="social-link">YT</a>
                 </div>
             </div>
 
@@ -25,11 +29,11 @@
             <div class="footer-links">
                 <h3><span class="gradient-text">EXPLORE</span></h3>
                 <ul>
-                    <li><a href="/about">About Us</a></li>
-                    <li><a href="/menu">Menu</a></li>
-                    <li><a href="/gallery">Gallery</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                    <li><a href="/blogs">Blogs</a></li>
+                    <li><a href="/about/">About Us</a></li>
+                    <li><a href="/menu/">Menu</a></li>
+                    <li><a href="/gallery/">Gallery</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+                    <li><a href="/blogs/">Blogs</a></li>
                 </ul>
             </div>
 
@@ -37,11 +41,11 @@
             <div class="footer-links">
                 <h3><span class="gradient-text">EXPERIENCES</span></h3>
                 <ul>
-                    <li><a href="/bowling">Bowling</a></li>
-                    <li><a href="/game-nights">Game Nights</a></li>
-                    <li><a href="/live-sports">Live Sports</a></li>
-                    <li><a href="/bar">Bar Lounge</a></li>
-                    <li><a href="/private-events">Private Events</a></li>
+                    <li><a href="/bowling/">Bowling</a></li>
+                    <li><a href="/game-nights/">Game Nights</a></li>
+                    <li><a href="/live-sports/">Live Sports</a></li>
+                    <li><a href="/bar/">Bar Lounge</a></li>
+                    <li><a href="/private-events/">Private Events</a></li>
                 </ul>
             </div>
 

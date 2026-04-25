@@ -362,11 +362,11 @@ function knockout_fallback_menu()
             echo 'current-menu-item'; ?>">
             <a href="<?php echo esc_url(home_url('/')); ?>">HOME</a>
         </li>
-        <li><a href="<?php echo esc_url(home_url('/about')); ?>">ABOUT</a></li>
-        <li><a href="<?php echo esc_url(home_url('/events')); ?>">EVENTS</a></li>
-        <li><a href="<?php echo esc_url(home_url('/gallery')); ?>">GALLERY</a></li>
-        <li><a href="<?php echo esc_url(home_url('/contact')); ?>">CONTACT</a></li>
-        <li><a href="<?php echo esc_url(home_url('/blog')); ?>">BLOG</a></li>
+        <li><a href="<?php echo esc_url(home_url('/about/')); ?>">ABOUT</a></li>
+        <li><a href="<?php echo esc_url(home_url('/events/')); ?>">EVENTS</a></li>
+        <li><a href="<?php echo esc_url(home_url('/gallery/')); ?>">GALLERY</a></li>
+        <li><a href="<?php echo esc_url(home_url('/contact/')); ?>">CONTACT</a></li>
+        <li><a href="<?php echo esc_url(home_url('/blog/')); ?>">BLOG</a></li>
     </ul>
     <?php
 }

@@ -50,7 +50,7 @@ get_header();
                 <a href="#contact-form-section" class="btn-glow btn-primary">
                     <span class="btn-icon">📝</span> Send Message
                 </a>
-                <a href="tel:+919147763399" class="btn-glow btn-secondary">
+                <a href="tel:+919147399599" class="btn-glow btn-secondary">
                     <span class="btn-icon">📞</span> Call Now
                 </a>
             </div>
@@ -322,13 +322,21 @@ get_header();
             <!-- Social Links -->
             <div class="social-links">
                 <span>Follow the action:</span>
-                <a href="https://instagram.com/knockoutkolkata" target="_blank" rel="noopener"
+                <a href="https://www.instagram.com/theknockout.co/" target="_blank" rel="noopener"
                     class="social-btn instagram">
                     <span aria-hidden="true">📷</span> Instagram
                 </a>
-                <a href="https://facebook.com/knockoutkolkata" target="_blank" rel="noopener"
+                <a href="https://www.facebook.com/TheKnockoutofficial" target="_blank" rel="noopener"
                     class="social-btn facebook">
                     <span aria-hidden="true">📘</span> Facebook
+                </a>
+                <a href="https://www.linkedin.com/company/theknockout" target="_blank" rel="noopener"
+                    class="social-btn linkedin">
+                    <span aria-hidden="true">💼</span> LinkedIn
+                </a>
+                <a href="https://www.youtube.com/@theknockout-official?sub_confirmation=1" target="_blank"
+                    rel="noopener" class="social-btn youtube">
+                    <span aria-hidden="true">▶️</span> YouTube
                 </a>
                 <a href="https://g.page/r/CRG4vTGoiH6qEBM/review" target="_blank" rel="noopener"
                     class="social-btn google">
