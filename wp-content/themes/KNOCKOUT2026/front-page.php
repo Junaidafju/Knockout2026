@@ -89,7 +89,7 @@ get_header(); ?>
                             <span class="stat-label">BOWLING ALLEY</span>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-number gradient-text">15+</span>
+                            <span class="stat-number gradient-text">10+</span>
                             <span class="stat-label">GAMES</span>
                         </div>
                         <div class="stat-item">
@@ -830,11 +830,11 @@ get_header(); ?>
                     </div>
                 </div>
                 <div class="event-modal-actions">
-                    <a href="https://wa.me/919876543210" class="cta-btn cta-btn-primary">
+                    <a href="https://wa.me/919831040034" class="cta-btn cta-btn-primary">
                         <span class="cta-btn-text">BOOK NOW</span>
                         <span class="cta-btn-glow"></span>
                     </a>
-                    <a href="tel:+919876543210" class="cta-btn cta-btn-secondary">
+                    <a href="tel:+919831040034" class="cta-btn cta-btn-secondary">
                         <span class="cta-btn-text">CALL US</span>
                         <span class="cta-btn-glow"></span>
                     </a>
